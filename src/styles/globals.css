@@ -1,22 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Telex&display=swap');
+
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
+
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+} */
+
+/* styles.css */
+.link-style-1 {
+  color: #007bff; /* Blue color */
+  /* additional styling if needed */
 }
 
-body {
+.link-style-2 {
+  color: #dc3545; /* Red color */
+  /* additional styling if needed */
+}
+
+/* Define styles for selected text */
+.link-style-1::selection {
+  background-color: #ffeb3b; /* Yellow background */
+  color: #000; /* Black text */
+}
+
+.link-style-2::selection {
+  background-color: #4ade80; /* Green background */
+  color: #fff; /* White text */
+}
+
+
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +56,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
