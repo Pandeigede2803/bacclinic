@@ -25,7 +25,7 @@ const Header = () => {
 
           <h3 className="ml-4 md:text-[37px] text-[29px] font-primary ">All Beauty In Me</h3>
         </span>
-        <h1 className=" text- font-primary md:text-[86px] text-[62px]  flex ">
+        <h1 className=" text- font-primary md:text-[68px] text-[62px]  flex ">
           BALI AESTHETIC<br></br>CENTRE
         </h1>
         <p className=" font-thin font-secondary md:text-[32px] text-[20px]">
