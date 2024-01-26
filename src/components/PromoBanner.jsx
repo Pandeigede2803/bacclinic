@@ -26,4 +26,4 @@ const PromoBanner = ({ src, alt, link }) => {
   );
 };
 
-export default PromoBanner;;
+export default PromoBanner;
