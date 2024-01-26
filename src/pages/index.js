@@ -6,6 +6,8 @@ import SliderCards from "@/components/SliderCards";
 import PromoBanner from "@/components/PromoBanner";
 import PromoSection from "@/components/PromoSection";
 import WhySection from "@/components/WhySection";
+import Motivation from "@/components/Motivation";
+import Testimoni from "@/components/Testimoni";
 
 
 export default function Home() {
@@ -22,6 +24,13 @@ export default function Home() {
       </div>
       <div>
         <WhySection/>
+      </div>
+
+      <div>
+        <Motivation/>
+      </div>
+      <div>
+        <Testimoni/>
       </div>
     </main>
   );

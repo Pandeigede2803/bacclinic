@@ -16,7 +16,7 @@ const PromoBanner = ({ src, alt, link }) => {
               height={576}
               className="rounded-xl transition-opacity duration-300 group-hover:opacity-50 w:80"
             />
-            <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 w-[1056px]">
+            <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 w-fill">
               <SearchIcon className="text-black text-3xl" />
             </div>
           </div>
