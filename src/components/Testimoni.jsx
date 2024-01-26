@@ -47,7 +47,7 @@ const Testimoni = () => {
         <div className="font-primary text-center flex flex-col ">
           <h4 className="md:mt-10 md:text-[29px] mt-10 ">TESTIMONIAL</h4>
           <h1 className="md:mt-10 md:text-[52px] text-[30px] mt-10 ">
-            WHAT'S CUSTOMER SAY
+            WHAT&apos;S CUSTOMER SAY
           </h1>
         </div>
         <div className="">
