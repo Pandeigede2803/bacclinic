@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Image from 'next/image'
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,16 +10,14 @@ const Navbar = () => {
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
 
   return (
-    <nav className="relative text-black  md:bg-transparent font-primary z-20 mx-6 mt-2">
+    <nav className=" bg-white bg-opacity-20 md:bg-opacity-50 sticky top-0 z-50   text-black md:bg-white font-primary mx-0 mt-0  bg-no-repeat bg-top md:bg-cover md:bg-top">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
         <Link className="flex flex-row" href="/">
           <Image
             src="https://ik.imagekit.io/m1akscp5q/logo%20bac%20horizontal%20hitam%201.png?updatedAt=1705581337965"
             width={193}
             height={48}
-
           />
-        
         </Link>
         <button
           type="button"
@@ -63,7 +61,9 @@ const Navbar = () => {
                 className="flex  items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0 md:w-auto  "
                 onClick={toggleDropdown}
               >
-                Treatment
+                <Link href="/Services" className=" hover:text-secondary">
+                  Services
+                </Link>
                 <svg
                   className="w-2.5 h-2.5 ms-2.5"
                   aria-hidden="true"
@@ -92,7 +92,7 @@ const Navbar = () => {
                   >
                     <li>
                       <Link
-                        href="#"
+                        href="/Services/Skintreatment"
                         className="block px-4 py-2 hover:bg-primary "
                       >
                         Skin Treatment
@@ -100,7 +100,7 @@ const Navbar = () => {
                     </li>
                     <li>
                       <Link
-                        href="#"
+                        href="/Services/Skinbooster"
                         className="block px-4 py-2 hover:bg-primary "
                       >
                         Skin Booster
@@ -145,13 +145,13 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/services"
+                href="/promo"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0     "
               >
                 Promo
               </Link>
             </li>
-          
+
             <li>
               <Link
                 href="/contact"
@@ -168,4 +168,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;;
+export default Navbar;

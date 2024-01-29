@@ -17,7 +17,7 @@ const TestimoniCards = ({ testimonials }) => {
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
           {/* Container for the cards with responsive overflow */}
-          <div className="overflow-y-auto md:overflow-x-auto md:overflow-y-hidden h-[660px]  ">
+          <div className="overflow-y-auto md:overflow-x-auto md:overflow-y-hidden h-[660px] md:h-auto   ">
             <ul className="grid gap-6 sm:gap-8 md:grid-cols-1 lg:grid-cols-3 xl:flex xl:flex-nowrap">
               {testimonials.map((testimonial, index) => (
                 <li key={index} className="min-w-max">

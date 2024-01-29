@@ -8,7 +8,7 @@ import PromoSection from "@/components/PromoSection";
 import WhySection from "@/components/WhySection";
 import Motivation from "@/components/Motivation";
 import Testimoni from "@/components/Testimoni";
-
+import GetReservation from "@/components/GetReservation";
 
 export default function Home() {
   return (
@@ -20,17 +20,20 @@ export default function Home() {
         <SliderCards />
       </div>
       <div>
-        <PromoSection/>
+        <PromoSection />
       </div>
       <div>
-        <WhySection/>
+        <GetReservation />
+      </div>
+      <div>
+        <WhySection />
       </div>
 
       <div>
-        <Motivation/>
+        <Motivation />
       </div>
       <div>
-        <Testimoni/>
+        <Testimoni />
       </div>
     </main>
   );

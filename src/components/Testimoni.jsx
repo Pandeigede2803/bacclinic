@@ -58,6 +58,6 @@ const Testimoni = () => {
       </div>
     </div>
   );
-};
+};;
 
 export default Testimoni;
