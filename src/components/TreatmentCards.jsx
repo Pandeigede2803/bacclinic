@@ -27,6 +27,7 @@ const TreatmentCards = ({ imageUrl, title, content,link }) => {
         src={imageUrl}
         width={1216}
         height={1217}
+        alt="Treatment"
       />
     </div>
   );

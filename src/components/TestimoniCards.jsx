@@ -1,5 +1,6 @@
 import React from "react";
 import StarRating from "./StarRating";
+import Image from "next/image";
 
 const TestimoniCards = ({ testimonials }) => {
   const truncateText = (text, maxLength) => {
@@ -24,7 +25,7 @@ const TestimoniCards = ({ testimonials }) => {
                   <figure className="relative rounded-2xl w-[320px] bg-white p-6 shadow-xl shadow-slate-900/10">
                     <blockquote className="relative">
                       <p className="text-lg tracking-tight text-slate-900">
-                      {truncateText(testimonial.quote, 200)}
+                        {truncateText(testimonial.quote, 200)}
                       </p>
                     </blockquote>
                     <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
@@ -37,7 +38,9 @@ const TestimoniCards = ({ testimonials }) => {
                         </div>
                       </div>
                       <div className="overflow-hidden rounded-full bg-slate-50">
-                        <img
+                        <Image
+                          width={40}
+                          height={40}
                           alt={testimonial.author}
                           className="h-14 w-14 object-cover"
                           src={testimonial.image}

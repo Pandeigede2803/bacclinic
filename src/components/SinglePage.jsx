@@ -2,15 +2,27 @@ import React from "react";
 import Image from "next/image";
 import TreatmentBox from "@/components/TreatmentBox";
 
-const SinglePage = ({ pageTitle, imageSrc, videoUrl, benefitsList, treatments }) => {
+const SinglePage = ({
+  pageTitle,
+  imageSrc,
+  videoUrl,
+  benefitsList,
+  treatments,
+}) => {
   return (
     <div>
       <div className="bg-primary w-full h-[256px] font-primary text-[40px] text-center text-secondary justify-center items-center inline-flex">
         <h1>{pageTitle}</h1>
       </div>
-      
+
       <div>
-        <Image src={imageSrc} width={4320} height={1210} className="w-full" />
+        <Image
+          src={imageSrc}
+          width={4320}
+          height={1210}
+          className="w-full"
+          alt="Treatment image"
+        />
       </div>
 
       <div className="my-8 justify-center flex items-center">

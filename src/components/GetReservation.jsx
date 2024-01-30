@@ -8,6 +8,7 @@ const GetReservation = () => {
         src="https://ik.imagekit.io/m1akscp5q/A7202798.jpeg?updatedAt=1706511949190"
         width={600}
         height={400}
+        alt="get reservation"
       ></Image>
 
       <div className=" flex flex-col md:space-y-20">
