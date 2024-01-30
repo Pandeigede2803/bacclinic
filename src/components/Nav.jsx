@@ -10,7 +10,7 @@ const Navbar = () => {
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
 
   return (
-    <nav className=" bg-white bg-opacity-20 md:bg-opacity-50 sticky top-0 z-50   text-black md:bg-white font-primary mx-0 mt-0  bg-no-repeat bg-top md:bg-cover md:bg-top">
+    <nav className=" bg-white bg-opacity-80 md:bg-opacity-80 sticky top-0 z-50   text-black md:bg-white font-primary mx-0 mt-0  bg-no-repeat bg-top md:bg-cover md:bg-top">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
         <Link className="flex flex-row" href="/">
           <Image

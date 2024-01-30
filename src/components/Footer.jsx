@@ -9,7 +9,7 @@ import Location from "./Location";
 
 const Footer = () => {
   return (
-    <footer className="   font-primary">
+    <footer className=" font-primary">
       <div className=" md:space-x-2 w-full bg p-4 py-6 lg:py-8 ">
         <div className="md:flex md:justify-center   flex-col md:flex-row ">
           {/* logo */}
@@ -25,13 +25,13 @@ const Footer = () => {
             </div>
 
             <div>
-              <p className="md:ml-4 font-secondary md:text-[12px]">
+              <p className="md:ml-4 font-secondary mt-4 md:text-[12px]">
               Di Bali Aesthetic Centre, kami membawa keindahan pulau Bali ke dalam setiap aspek layanan estetika kami. Sebagai pionir dalam industri kecantikan dan perawatan kulit di Bali, kami mengkhususkan diri dalam memberikan pengalaman perawatan yang holistik dan personal.
               </p>
             </div>
 
             {/* socmed icon */}
-            <div className=" mt-4 md:ml-4 flex flex-row space-x-4">
+            <div className=" mt-10 md:ml-4 flex flex-row space-x-4">
               <AiFillInstagram />
               <TbBrandTiktok />
               <RiWhatsappFill />

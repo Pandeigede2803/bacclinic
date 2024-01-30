@@ -5,7 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const PromoBanner = ({ src, alt, link }) => {
   return (
-    <div className="relative group w-fit mx-8 md:mx-2 ">
+    <div className="relative group w-fit mx-8 md:mx-6 ">
       <Link href={link || '/#'}>
        
           <div className="md:w-fit w-72 ">
@@ -17,7 +17,9 @@ const PromoBanner = ({ src, alt, link }) => {
               className="rounded-xl transition-opacity duration-300 group-hover:opacity-50 w:80"
             />
             <div className="absolute inset-0 flex justify-center items-center opacity-0 group-hover:opacity-100 w-fill">
-              <SearchIcon className="text-black text-3xl" />
+              <div className=" bg-black p-4 rounded-full opacity-25">
+              <SearchIcon className="text-white text-3xl" />
+              </div>
             </div>
           </div>
 

@@ -26,6 +26,7 @@ module.exports = {
         accent2: "#e0f1d9",
         background: "#FDF6F7",
         abu: "#7B7B7B",
+        biruabu:"#A7B9BE",
 
       },
       fontWeight: {
