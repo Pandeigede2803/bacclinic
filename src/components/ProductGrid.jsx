@@ -13,7 +13,7 @@ const ProductGrid = () => {
     {ProductData.map((product) => (
           <div className="min-w-[20%] sm:min-w-[30%] md:min-w-[23%] lg:min-w-[18%]"> {/* Adjust the width per breakpoint */}
             <ProductCard
-              key={product.id}
+      
               id={product.id}
               src={product.src}
               title={product.title}
