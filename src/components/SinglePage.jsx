@@ -37,9 +37,14 @@ const SinglePage = ({
         ></iframe>
       </div>
 
+
+      <div>
+
+      </div>
+
       <div className="md:mx-auto my-12 mx-10 md:w-[1107px] w-[320px] h-auto  flex-col justify-center items-start font-primary ">
         <h1 className="text-stone-500 md:text-[40px] text-[20px] font-normal ">
-          MANFAAT
+          BENEFIT
         </h1>
         <ul className="w-fit text-black md:text-[25px] text-[15px] font-normal leading-[55px] list-disc list-inside">
           {benefitsList.map((benefit, index) => (

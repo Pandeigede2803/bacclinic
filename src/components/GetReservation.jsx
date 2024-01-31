@@ -12,7 +12,7 @@ const GetReservation = () => {
       ></Image>
 
       <div className=" flex flex-col md:space-y-20">
-        <h1 className=" font-bold text-3xl mx-auto">GET RESERVATION NOW!</h1>
+        <h1 className=" font-bold text-2xl mx-auto">GET RESERVATION NOW!</h1>
         <p className=" text-justify mx-10">
           Kami di Bali Aesthetic Centre percaya bahwa kecantikan adalah
           perjalanan, bukan hanya tujuan.<br></br>

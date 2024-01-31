@@ -3,10 +3,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import SearchIcon from '@mui/icons-material/Search';
 
-const CardsTreatment = ({ src, title, alt, id, link }) => {
+const CardsTreatment = ({ src, title, alt, id, slug }) => {
   return (
     <div id={id} className="font-primary relative group mx-4 ">
-      <Link href={link}>
+      <Link href={`/Services/${slug}`}>
         <div className="relative">
           <Image
             src={src}

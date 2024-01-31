@@ -1,9 +1,13 @@
-import React from 'react'
+import GetReservation from '@/components/GetReservation'
+import React from 'react';
+import CtaSection from '@/components/ctaSection';
 
 const about = () => {
   return (
     <div>
-        <h1>About</h1>
+      <CtaSection />
+     
+  
       
     </div>
   )

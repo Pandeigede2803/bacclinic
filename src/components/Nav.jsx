@@ -8,6 +8,12 @@ const Navbar = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
+  const toggleClose = () => setIsMenuOpen(false);
+
+  const closeAllMenus = () => {
+    setIsMenuOpen(false);
+    setIsDropdownOpen(false);
+  };
 
   return (
     <nav className=" bg-white bg-opacity-80 md:bg-opacity-80 sticky top-0 z-50   text-black md:bg-white font-primary mx-0 mt-0  bg-no-repeat bg-top md:bg-cover md:bg-top">
@@ -49,7 +55,7 @@ const Navbar = () => {
           id="navbar-dropdown"
         >
           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent bg-white ">
-            <li>
+            <li onClick={toggleClose}>
               <Link
                 href="/"
                 className="block md:hover:text-secondary py-2 px-3 hover:bg-gray-100 text-black rounded hover:md:bg-transparent md:text-black md:p-0   "
@@ -62,7 +68,11 @@ const Navbar = () => {
                 className="flex  items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-secondary md:p-0 md:w-auto  "
                 onClick={toggleDropdown}
               >
-                <Link href="/Services" className=" hover:text-secondary">
+                <Link
+                  onClick={closeAllMenus}
+                  href="/Services"
+                  className=" hover:text-secondary"
+                >
                   Services
                 </Link>
                 <svg
@@ -91,7 +101,7 @@ const Navbar = () => {
                     className="py-2 text-sm text-gray-700 dark:text-gray-400"
                     aria-labelledby="dropdownLargeButton"
                   >
-                    <li>
+                    <li onClick={closeAllMenus}>
                       <Link
                         href="/Services/Skintreatment"
                         className="block px-4 py-2 hover:bg-primary "
@@ -99,7 +109,7 @@ const Navbar = () => {
                         Skin Treatment
                       </Link>
                     </li>
-                    <li>
+                    <li onClick={closeAllMenus}>
                       <Link
                         href="/Services/Skinbooster"
                         className="block px-4 py-2 hover:bg-primary "
@@ -107,7 +117,7 @@ const Navbar = () => {
                         Skin Booster
                       </Link>
                     </li>
-                    <li>
+                    <li onClick={closeAllMenus}>
                       <Link
                         href="#"
                         className="block px-4 py-2 hover:bg-primary "
@@ -115,7 +125,7 @@ const Navbar = () => {
                         Botox
                       </Link>
                     </li>
-                    <li>
+                    <li onClick={closeAllMenus}>
                       <Link
                         href="#"
                         className="block px-4 py-2 hover:bg-primary "
@@ -126,6 +136,7 @@ const Navbar = () => {
                   </ul>
                   <div className="py-1">
                     <Link
+                      onClick={closeAllMenus}
                       href="#"
                       className="block px-4 py-2 text-sm hover:bg-primary  "
                     >

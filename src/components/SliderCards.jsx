@@ -1,55 +1,12 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import CardsTreatment from './CardsTreatment';
+import treatments from "@/components/TreatmentHomeData";
 
 export default class AutoPlay extends Component {
   render() {
     // Define the treatments data directly in the component
-    const treatments = [
-      {
-        id: "treatment1",
-        src: "https://ik.imagekit.io/m1akscp5q/Rectangle%2042.png?updatedAt=1705909839559",
-        title: "Treatment 1",
-        alt: "Description of Treatment 1",
-        link: "/#",
-      },
-      {
-        id: "treatment2",
-        src: "https://ik.imagekit.io/m1akscp5q/Rectangle%2043.png?updatedAt=1705909839482",
-        title: "Treatment 2",
-        alt: "Description of Treatment 2",
-        link: "/#",
-      },
-  
-      {
-        id: "treatment3",
-        src: "https://ik.imagekit.io/m1akscp5q/Rectangle%2044.png?updatedAt=1705909839238",
-        title: "Treatment 2",
-        alt: "Description of Treatment 2",
-        link: "/#",
-      },
-      {
-        id: "treatment3",
-        src: "https://ik.imagekit.io/m1akscp5q/Rectangle%2044.png?updatedAt=1705909839238",
-        title: "Treatment 2",
-        alt: "Description of Treatment 2",
-        link: "/#",
-      },
-      {
-        id: "treatment3",
-        src: "https://ik.imagekit.io/m1akscp5q/Rectangle%2044.png?updatedAt=1705909839238",
-        title: "Treatment 2",
-        alt: "Description of Treatment 2",
-        link: "/#",
-      },
-      {
-        id: "treatment3",
-        src: "https://ik.imagekit.io/m1akscp5q/Rectangle%2044.png?updatedAt=1705909839238",
-        title: "Treatment 2",
-        alt: "Description of Treatment 2",
-        link: "/#",
-      },
-    ];
+   
 
     const settings = {
       dots: true,
@@ -99,7 +56,7 @@ export default class AutoPlay extends Component {
               src={treatment.src}
               title={treatment.title}
               alt={treatment.alt}
-              link={treatment.link}
+              slug={treatment.slug}
             />
           ))}
         </Slider>
