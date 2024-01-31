@@ -31,4 +31,3 @@ const ProductCard = ({ src, title, alt, id, link }) => {
 };
 
 export default ProductCard;
-;
