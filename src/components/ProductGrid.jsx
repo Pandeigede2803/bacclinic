@@ -29,4 +29,4 @@ const ProductGrid = () => {
   );
 };
 
-export default ProductGrid;
+export default ProductGrid;;
