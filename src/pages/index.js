@@ -9,6 +9,8 @@ import WhySection from "@/components/WhySection";
 import Motivation from "@/components/Motivation";
 import Testimoni from "@/components/Testimoni";
 import GetReservation from "@/components/GetReservation";
+import ProductCard from "@/components/ProductCard";
+import ProductGrid from "@/components/ProductGrid";
 
 export default function Home() {
   return (
@@ -35,6 +37,10 @@ export default function Home() {
       <div>
         <Testimoni />
       </div>
+      <div>
+      <ProductGrid/>
+      </div>
+
     </main>
   );
 }

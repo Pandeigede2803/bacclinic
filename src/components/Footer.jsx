@@ -9,7 +9,7 @@ import Location from "./Location";
 
 const Footer = () => {
   return (
-    <footer className=" font-primary">
+    <footer className=" bg-gradient-to-tl from-orange-100 to-orange-50 font-primary">
       <div className=" md:space-x-2 w-full bg p-4 py-6 lg:py-8 ">
         <div className="md:flex md:justify-center   flex-col md:flex-row ">
           {/* logo */}
@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className=" w-full md:hidden  ">
+          <div className=" w-full  md:hidden  ">
             <Accordion/>
           </div>
           <div className=" w-full hidden md:flex md:mx-2  ">

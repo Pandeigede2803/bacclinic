@@ -5,10 +5,10 @@ const AccordionItem = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-gray-200">
+    <div className="border-b border-gray-200 ">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex justify-between items-center w-full py-3 px-0 bg-white text-left text-gray-800 font-medium focus:outline-none"
+        className="flex justify-between items-center w-full py-3 px-0 bg-gradient-to-tl from-orange-100 to-orange-50 text-left text-gray-800 font-medium focus:outline-none"
       >
         {title}
         <span className="text-xl">{isOpen ? "-" : "+"}</span>
@@ -20,9 +20,9 @@ const AccordionItem = ({ title, children }) => {
 
 const Accordion = () => {
   return (
-    <div className="divide-y divide-gray-200  md:flex md:flex-row">
+    <div className="divide-y   divide-gray-200  md:flex md:flex-row">
       <AccordionItem title="Treatment">
-        <ul className="list-disc list-inside">
+        <ul className="list-disc list-inside ">
           <li>
             <Link href="/facials" className=" hover:text-secondary">
               Facials
