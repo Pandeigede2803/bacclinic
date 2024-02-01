@@ -19,7 +19,7 @@ const GetReservation = () => {
           <br></br> Setiap langkah yang Anda ambil bersama kami adalah langkah
           menuju versi terbaik dari diri Anda. <br></br>
         </p>
-        <button className=" mt-12 md:mx-auto justify-start hover:bg-black hover:text-white bg-tranpasarent hover:shadow-xl border-black border text-black font-secondary text-[17px] lg:py-[16px] lg:px-[85px] py-[14px] px-[30px] rounded-[9px] mx-10">
+        <button className="   mt-12 md:mx-auto justify-start hover:bg-black hover:text-white bg-tranpasarent hover:shadow-xl border-black border text-black font-secondary text-[17px] lg:py-[16px] lg:px-[85px] py-[14px] px-[30px] rounded-[9px] mx-10">
           Get Reservation
         </button>
       </div>

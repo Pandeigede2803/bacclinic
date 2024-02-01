@@ -1,5 +1,7 @@
-import Image from "next/image";
+import React from 'react'
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
+import Image from "next/image";
 import CustomLinkComponent from "@/components/CustomLinkComponent";
 import Header from "@/components/Header";
 import SliderCards from "@/components/SliderCards";
@@ -13,6 +15,7 @@ import ProductCard from "@/components/ProductCard";
 import ProductGrid from "@/components/ProductGrid";
 
 export default function Home() {
+
   return (
     <main>
       <div className="">
@@ -40,7 +43,13 @@ export default function Home() {
       <div>
       <ProductGrid/>
       </div>
-
+      <FloatingWhatsApp
+        phoneNumber="6287777939598"
+        accountName="BAC CLINIC"
+        className="whatsapp-icon"
+        avatar="https://ik.imagekit.io/m1akscp5q/logo%20bac%20vertikal.png?updatedAt=1706761240275"
+        chatMessage="Hello there! 🤝 How can we help?"
+      />
     </main>
   );
 }

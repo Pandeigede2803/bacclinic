@@ -3,6 +3,7 @@ import SinglePage from "@/components/SinglePage";
 import CtaSection from "@/components/ctaSection";
 import TreatmentDetailsData from '@/components/TreatmentDetails';
 import { useRouter } from "next/router";
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 const Single = () => {
   const router = useRouter();
@@ -27,6 +28,7 @@ console.log(treatmentDetail);
         treatments={treatmentDetail.treatments}
       />
       <CtaSection />
+      <FloatingWhatsApp/>
     </div>
   );
 };
