@@ -3,7 +3,7 @@ import React from "react";
 
 const VisionMissionSection = () => {
   return (
-    <div className="font-primary mx-2 space-y-6 items-center my-20 ">
+    <div className="font-primary space-y-6 flex flex-col items-left justify-center align-middle ">
       <h1 className=" font-extrabold text-3xl  text-secondary">ABOUT BAC</h1>
       <p className=" text-justify text-lg">
         Bali Aesthetic Centre is more than just a skin treatment and plastic

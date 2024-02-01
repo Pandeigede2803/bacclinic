@@ -13,7 +13,7 @@ const Footer = () => {
       <div className=" md:space-x-2 w-full bg p-4 py-6 lg:py-8 ">
         <div className="md:flex md:justify-center   flex-col md:flex-row ">
           {/* logo */}
-          <div className="md:w-[600px] ">
+          <div className="md:w-1/4 ">
             <div className="mb-6 md:mb-0">
               <Link href="https://flowbite.com/" className="flex items-center">
                 <Image
@@ -27,7 +27,11 @@ const Footer = () => {
 
             <div>
               <p className="md:ml-4 font-secondary mt-4 md:text-[12px]">
-              Di Bali Aesthetic Centre, kami membawa keindahan pulau Bali ke dalam setiap aspek layanan estetika kami. Sebagai pionir dalam industri kecantikan dan perawatan kulit di Bali, kami mengkhususkan diri dalam memberikan pengalaman perawatan yang holistik dan personal.
+                Di Bali Aesthetic Centre, kami membawa keindahan pulau Bali ke
+                dalam setiap aspek layanan estetika kami. Sebagai pionir dalam
+                industri kecantikan dan perawatan kulit di Bali, kami
+                mengkhususkan diri dalam memberikan pengalaman perawatan yang
+                holistik dan personal.
               </p>
             </div>
 
@@ -39,17 +43,19 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className=" w-full  md:hidden  ">
-            <Accordion/>
-          </div>
-          <div className=" w-full hidden md:flex md:mx-2  ">
-            <FooterNav/>
+          <div className="md:w-2/4 flex flex-row align-middle items-center md:mx-auto justify-center">
+            <div className=" w-full  md:hidden  ">
+              <Accordion />
+            </div>
+            <div className=" w-full hidden md:flex   ">
+              <FooterNav />
+            </div>
           </div>
 
-          <div className=" md:w-2/4 w-full ">
-            <Location/>
+          <div className=" md:w-1/4 w-full ">
+            <Location />
           </div>
-          
+
           {/* accordion */}
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />

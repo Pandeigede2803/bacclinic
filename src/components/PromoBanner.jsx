@@ -5,10 +5,10 @@ import SearchIcon from '@mui/icons-material/Search';
 
 const PromoBanner = ({ src, alt, link }) => {
   return (
-    <div className="relative group w-fit mx-8 md:mx-6 ">
+    <div className="relative group w-fit mx-4 md:mx-8 ">
       <Link href={link || '/#'}>
        
-          <div className="md:w-fit w-72 ">
+          <div className="md:w-auto w-fit ">
             <Image
               src={src}
               alt={alt}

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import PromoBanner from "./PromoBanner";
+import promoBanners from "./Promodata";
 import {
   IoIosArrowDroprightCircle,
   IoIosArrowDropleftCircle,
@@ -42,43 +43,11 @@ function PrevArrow(props) {
 
 export default class SimpleSlider extends Component {
   render() {
-    const promoBanners = [
-      {
-        src: "https://ik.imagekit.io/m1akscp5q/5.jpg?updatedAt=1706021469498",
-        alt: "Description of Image 1",
-        link: "/",
-      },
-      {
-        src: "https://ik.imagekit.io/m1akscp5q/8.jpg?updatedAt=1706021469485",
-        alt: "Description of Image 2",
-        link: "/",
-      },
-      {
-        src: "https://ik.imagekit.io/m1akscp5q/1.jpg?updatedAt=1706021469072",
-        alt: "Description of Image 2",
-        link: "/",
-      },
-      {
-        src: "https://ik.imagekit.io/m1akscp5q/4.jpg?updatedAt=1706021469073",
-        alt: "Description of Image 2",
-        link: "/",
-      },
-      {
-        src: "https://ik.imagekit.io/m1akscp5q/3.jpg?updatedAt=1706021469495",
-        alt: "Description of Image 2",
-        link: "/",
-      },
-      {
-        src: "https://ik.imagekit.io/m1akscp5q/1.jpg?updatedAt=1706021469072",
-        alt: "Description of Image 2",
-        link: "/",
-      },
-      // ... more banners
-    ];
+  
 
     const settings = {
       centerMode: true,
-      centerPadding: "150px",
+      centerPadding: "130px",
       accessibility: true,
       dots: false,
       infinite: true,
@@ -126,10 +95,10 @@ export default class SimpleSlider extends Component {
         <h2 className="font-primary text-secondary text-[29px]">
           Our Promo This Month
         </h2>
-        <div className="py-10 md:mx-32 mx-10 ">
+        <div className="py-10 md:mx-32 lg:mx-10 2xl:mx-60    mx-10 ">
           <Slider {...settings}>
             {promoBanners.map((banner, index) => (
-              <div key={index} className="outline-none">
+              <div key={index} className="outline-none ">
                 {/* Added outline-none to remove focus outline */}
                 <PromoBanner
                   src={banner.src}

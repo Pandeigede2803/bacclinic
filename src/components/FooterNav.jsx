@@ -3,8 +3,8 @@ import Link from "next/link"
 
 const FooterNav = () => {
   return (
-    <div className="ml-2  px-4 mt-4">
-      <div className=" space-x-10 md:flex md:flex-row  ">
+    <div className="mx-auto  px-4 mt-4">
+      <div className=" space-x-20 md:flex md:flex-row  ">
         <div title="Treatment ">
             <h2 className="mb-4">SKIN TREATMENT</h2>
           <ul className="list-disc list-inside space-y-6">
