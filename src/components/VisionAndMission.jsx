@@ -7,7 +7,7 @@ const VisionMissionSection = () => {
       <h1 className=" font-extrabold text-3xl  text-secondary">ABOUT BAC</h1>
       <p className=" text-justify text-lg">
         Bali Aesthetic Centre is more than just a skin treatment and plastic
-        surgery clinic; it's a sanctuary designed to enhance your natural beauty
+        surgery clinic; it`&lsquo;`s a sanctuary designed to enhance your natural beauty
         and elevate your sense of well-being. Our team of skilled professionals
         is committed to delivering personalized, high-quality care in a serene
         and comfortable environment.
