@@ -32,4 +32,4 @@ const VisionMissionSection = () => {
   );
 };
 
-export default VisionMissionSection;
+export default VisionMissionSection;;
