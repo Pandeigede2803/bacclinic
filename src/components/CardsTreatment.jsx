@@ -7,7 +7,7 @@ const CardsTreatment = ({ src, title, alt, id, slug }) => {
   return (
     <div id={id} className="font-primary relative group mx-4 ">
       <Link href={`/Services/${slug}`}>
-        <div className="relative">
+        <div className="relative w-fit">
           <Image
             src={src}
             width={303}
@@ -16,7 +16,7 @@ const CardsTreatment = ({ src, title, alt, id, slug }) => {
             className="transition-opacity duration-300 "
           />
           {/* Overlay with icon */}
-          <div className="w-fill   p-4 rounded-lg absolute inset-0 flex justify-center items-center bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300">
+          <div className="w-full    p-4 rounded-lg absolute inset-0 flex justify-center items-center bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300">
             <SearchIcon className="text-white text-3xl opacity-0 group-hover:opacity-100" />
           </div>
         </div>

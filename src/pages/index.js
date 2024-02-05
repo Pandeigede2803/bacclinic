@@ -13,6 +13,7 @@ import Testimoni from "@/components/Testimoni";
 import GetReservation from "@/components/GetReservation";
 import ProductCard from "@/components/ProductCard";
 import ProductGrid from "@/components/ProductGrid";
+import Form from '@/components/Form';
 
 export default function Home() {
 
@@ -43,6 +44,7 @@ export default function Home() {
       <div>
       <ProductGrid/>
       </div>
+  
       <FloatingWhatsApp
         phoneNumber="6287777939598"
         accountName="BAC CLINIC"

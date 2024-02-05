@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 
 const Header = () => {
@@ -31,12 +32,16 @@ const Header = () => {
           Bebaskan pesona kecantikanmu <br></br>di klinik Bali Aesthetic Centre
         </p>
         <div className="flex md:flex-row  flex-col space-y-[20px] md:space-y-0.5 w-[270px] md:w-fit  md:space-x-[43px]">
+          <Link href="https://wa.me/6287777939598">
           <button className=" hover:bg-transparent hover:text-black bg-black border-black border text-white font-secondary text-[17px] lg:py-[16px] lg:px-[85px] py-[14px] px-[60px] rounded-[9px]">
             Get Reservation
           </button>
+          </Link>
+          <Link href="/Services">
           <button className="hover:bg-black hover:text-white bg-tranparent text-black border-black border  font-secondary text-[17px] lg:py-[16px] lg:px-[85px] py-[14px] px-[60px]  rounded-[9px]">
             Cek Our Catalogue
           </button>
+          </Link>
         </div>
       </div>
 

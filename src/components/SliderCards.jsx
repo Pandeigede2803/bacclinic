@@ -11,7 +11,7 @@ export default class AutoPlay extends Component {
     const settings = {
       dots: true,
       infinite: true,
-      slidesToShow: 4,
+      slidesToShow: 6,
       slidesToScroll: 1,
       autoplay: true,
       speed: 6000,
@@ -22,6 +22,7 @@ export default class AutoPlay extends Component {
       centerPadding: "10px",
       // accessibility: true,
       responsive: [
+        
         {
           breakpoint: 1024, // At 1024px or less
           settings: {
