@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const TreatmentCards = ({id, imageUrl, title, content,slug,alt }) => {
   return (
-    <div key={id} className="w-[325px] h-[550px] relative font-primary">
+    <div key={id} className="w-[325px] h-[550px] relative font-primary transition duration-300 ease-in-out transform hover:scale-105">
       <div className="w-[296px] h-[250px] left-[18px] top-[296px] absolute bg-stone-300 bg-opacity-80 rounded-lg blur-[36px]" />
       <div className="w-[325px] h-[274px] left-0 top-[276px] absolute bg-white rounded-lg" />
       <Link href={`/Services/${slug}`}>
@@ -34,4 +34,4 @@ const TreatmentCards = ({id, imageUrl, title, content,slug,alt }) => {
 };
 
 
-export default TreatmentCards;
+export default TreatmentCards;;
