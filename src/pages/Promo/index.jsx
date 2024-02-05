@@ -1,9 +1,11 @@
 import React from "react";
 import PromoCards from "@/components/PromoCards";
-import PromoDataPage from "@/components/PromoDataPage"
+import PromoDataPage from "@/components/PromoDataPage";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 const Promo = () => {
   return (
+    <div>
     <div className=" grid md:grid-cols-3 grid-cols-1 gap-10 m-10 bg-primary p-8 ">
       {PromoDataPage.map((promo) => (
         <PromoCards
@@ -14,7 +16,18 @@ const Promo = () => {
           content={promo.content}
         />
       ))}
+      
     </div>
+    <FloatingWhatsApp
+        phoneNumber="6287777939598"
+        accountName="BAC CLINIC"
+        className="whatsapp-icon"
+        avatar="https://ik.imagekit.io/m1akscp5q/logo%20bac%20vertikal.png?updatedAt=1706761240275"
+        chatMessage="Hello there! 🤝 How can we help?"
+      />
+    
+    </div>
+
   );
 };
 
