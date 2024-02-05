@@ -1,5 +1,6 @@
 import ContactSection from "@/components/ContactSection";
 import React from "react";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 const Contact = () => {
   return (
