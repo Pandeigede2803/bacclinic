@@ -34,4 +34,4 @@ const TreatmentCards = ({id, imageUrl, title, content,slug,alt }) => {
 };
 
 
-export default TreatmentCards;;
+export default TreatmentCards;;;;
