@@ -50,4 +50,4 @@ const PromoDataPage = [
   },
 ];
 
-export default PromoDataPage;
+export default PromoDataPage;;;;;;
