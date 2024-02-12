@@ -39,7 +39,7 @@ const Article = () => {
 
   return (
     <div className="font-primary mt-20">
-        <h1 className="font-bold text-center text-2xl mb-10">WHAT'S NEW</h1>
+        <h1 className="font-bold text-center text-2xl mb-10">WHAT&apos;S NEW</h1>
         <h4 className=" text-center text-xl text-secondary "> Explore Our Latest Insights and Tips in the World of Skincare and Wellness</h4>
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         {/* Grid */}
