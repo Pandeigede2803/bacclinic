@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
 import CardsTreatment from './CardsTreatment';
-import treatments from "@/components/TreatmentHomeData";
+import treatments from "@/components/Json/TreatmentHomeData"
 
 export default class AutoPlay extends Component {
   render() {
@@ -11,7 +11,7 @@ export default class AutoPlay extends Component {
     const settings = {
       dots: true,
       infinite: true,
-      slidesToShow: 6,
+      slidesToShow: 5,
       slidesToScroll: 1,
       autoplay: true,
       speed: 6000,

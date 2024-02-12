@@ -14,6 +14,7 @@ import GetReservation from "@/components/GetReservation";
 import ProductCard from "@/components/ProductCard";
 import ProductGrid from "@/components/ProductGrid";
 import Form from '@/components/Form';
+import Article from '@/components/Article';
 
 export default function Home() {
 
@@ -43,6 +44,10 @@ export default function Home() {
       </div>
       <div>
       <ProductGrid/>
+      </div>
+      <div>
+        <Article/>
+
       </div>
   
       <FloatingWhatsApp

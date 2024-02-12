@@ -25,17 +25,20 @@ const SinglePage = ({
         />
       </div>
 
-      <div className="my-8 justify-center flex items-center">
-        <iframe
-          width="1103"
-          height="555"
-          src={videoUrl}
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          style={{ maxWidth: "100%" }}
-        ></iframe>
-      </div>
+      {videoUrl && (
+        <div className="my-8 justify-center flex items-center">
+          <iframe
+            width="1103"
+            height="555"
+            src={videoUrl}
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{ maxWidth: "100%" }}
+          ></iframe>
+        </div>
+      )}
+
 
 
       <div>

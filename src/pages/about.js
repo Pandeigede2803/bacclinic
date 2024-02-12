@@ -13,7 +13,7 @@ const about = () => {
         <h1 className=" text-center my-auto">ABOUT US</h1>
       </div>
       <div className=""><VideoAbout/></div>
-      <div className=" grid md:grid-cols-2 grid-cols-1 ">
+      <div className=" grid lg:grid-cols-2 md:grid-cols-1 grid-cols-1 ">
         <div className=" bg-red-300">
           <Image
             src={

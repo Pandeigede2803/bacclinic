@@ -16,10 +16,10 @@ const TestimoniCards = ({ testimonials }) => {
         aria-label="What our customers are saying"
         className="sm:py-10"
       >
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ">
+        <div className="mx-auto md:w-[600px] lg:w-[170vh] px-4 sm:px-6 lg:px-8 ">
           {/* Container for the cards with responsive overflow */}
-          <div className="overflow-y-auto md:overflow-x-auto md:overflow-y-hidden h-[660px] md:h-auto   ">
-            <ul className="grid gap-6 sm:gap-8 md:grid-cols-1 lg:grid-cols-3 xl:flex xl:flex-nowrap">
+          <div className="overflow-y-auto sm:overflow-x-auto sm:overflow-y-hidden h-[660px] md:h-auto   ">
+            <ul className="grid gap-6 sm:gap-8 md:grid-cols-2  lg:grid-cols-3 md:flex md:flex-nowrap">
               {testimonials.map((testimonial, index) => (
                 <li key={index} className="min-w-max">
                   <figure className="relative rounded-2xl w-[320px] bg-white p-6 shadow-xl shadow-slate-900/10">

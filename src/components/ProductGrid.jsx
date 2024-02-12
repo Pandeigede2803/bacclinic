@@ -1,6 +1,6 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import ProductData from "./ProductData"; // Ensure this is an array of objects
+import ProductData from "@/components/Json/ProductData"; // Ensure this is an array of objects
 
 const ProductGrid = () => {
   return (

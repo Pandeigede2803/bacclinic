@@ -1,6 +1,6 @@
 import React from "react";
 import PromoCards from "@/components/PromoCards";
-import PromoDataPage from "@/components/PromoDataPage";
+import PromoDataPage from "@/components/Json/PromoDataPage";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 
 const Promo = () => {

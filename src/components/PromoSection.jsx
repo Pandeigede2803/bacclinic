@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import PromoBanner from "./PromoBanner";
-import promoBanners from "./Promodata";
+import promoBanners from "@/components/Json/Promodata"
 import {
   IoIosArrowDroprightCircle,
   IoIosArrowDropleftCircle,

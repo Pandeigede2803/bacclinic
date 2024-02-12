@@ -15,7 +15,7 @@ const TreatmentCards = ({id, imageUrl, title, content,slug,alt }) => {
       </button>
       </Link>
       <div className="h-[126px] left-[24px] top-[321px] absolute">
-        <div className="w-[277px] mt-2 h-[91px] left-0 top-[35px] absolute text-neutral-600 text-base font-normal leading-snug">
+        <div className="w-[277px] my-2  h-[91px] left-0 top-[35px] absolute text-neutral-600 text-base font-normal leading-snug">
           {content}
         </div>
         <div className="left-0 top-0 text-stone-500 text-2xl font-normal leading-relaxed">
