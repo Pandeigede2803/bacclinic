@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link"
+import Link from "next/link";
 
 const SidebarArticle = () => {
   return (
@@ -13,8 +13,8 @@ const SidebarArticle = () => {
                 Learn more about Preline
               </h3>
               <p className="mt-3 text-lg text-gray-800">
-                Join us for an upcoming webinar where we'll walk you through
-                Preline and answer any questions you may have.
+                Join us for an upcoming webinar where we&apos;ll walk you
+                through Preline and answer any questions you may have.
               </p>
             </div>
             <div>
@@ -108,4 +108,4 @@ const SidebarArticle = () => {
   );
 };
 
-export default SidebarArticle;;
+export default SidebarArticle;
