@@ -45,7 +45,7 @@ const Header = () => {
         </motion.h3>
       </motion.span>
       <motion.h1
-        className="text- font-primary md:text-[68px] text-[62px] flex"
+        className="text- font-primary md:text-[68px] text-[62px] flex "
         variants={itemVariants}
         initial="hidden"
         whileInView="visible"
@@ -86,7 +86,7 @@ const Header = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Check Our Catalogue
+            Our Catalogue
           </motion.button>
         </Link>
       </motion.div>

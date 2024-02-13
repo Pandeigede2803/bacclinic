@@ -23,9 +23,9 @@ const TreatmentCards = ({id, imageUrl, title, content,slug,alt }) => {
         </div>
       </div>
       <Image
-        className="w-[325px] h-[297px] left-0 top-0 absolute rounded-tl-lg rounded-tr-lg"
+        className="w-[325px] h-[325px] left-0 top-0 absolute rounded-tl-lg rounded-tr-lg"
         src={imageUrl}
-        width={1216}
+        width={1217}
         height={1217}
         alt={alt}
       />

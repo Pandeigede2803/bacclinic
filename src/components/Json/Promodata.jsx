@@ -1,31 +1,31 @@
 const promoBanners = [
     {
-      src: "https://ik.imagekit.io/m1akscp5q/5.jpg?updatedAt=1706021469498",
+      src: "https://ik.imagekit.io/m1akscp5q/banner2.jpg?updatedAt=1707809581889",
       alt: "Description of Image 1",
       link: "/",
     },
     {
-      src: "https://ik.imagekit.io/m1akscp5q/8.jpg?updatedAt=1706021469485",
+      src: "https://ik.imagekit.io/m1akscp5q/banner1.jpg?updatedAt=1707809581885",
       alt: "Description of Image 2",
       link: "/",
     },
     {
-      src: "https://ik.imagekit.io/m1akscp5q/1.jpg?updatedAt=1706021469072",
+      src: "https://ik.imagekit.io/m1akscp5q/banner6.jpg?updatedAt=1707809581904",
       alt: "Description of Image 2",
       link: "/",
     },
     {
-      src: "https://ik.imagekit.io/m1akscp5q/4.jpg?updatedAt=1706021469073",
+      src: "https://ik.imagekit.io/m1akscp5q/banner5.jpg?updatedAt=1707809581940",
       alt: "Description of Image 2",
       link: "/",
     },
     {
-      src: "https://ik.imagekit.io/m1akscp5q/3.jpg?updatedAt=1706021469495",
+      src: "https://ik.imagekit.io/m1akscp5q/banner5.jpg?updatedAt=1707809581940",
       alt: "Description of Image 2",
       link: "/",
     },
     {
-      src: "https://ik.imagekit.io/m1akscp5q/1.jpg?updatedAt=1706021469072",
+      src: "https://ik.imagekit.io/m1akscp5q/banner3.jpg?updatedAt=1707809581942",
       alt: "Description of Image 2",
       link: "/",
     },
