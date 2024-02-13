@@ -32,4 +32,4 @@ const promoBanners = [
     // ... more banners
   ];
 
-  export default promoBanners;
+  export default promoBanners;;
