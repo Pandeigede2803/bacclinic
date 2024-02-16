@@ -1,38 +1,39 @@
 const ArticleJson = [
-
   {
-    key:"1",
+    key: "1",
     metadata: {
-      title: "How to Boost Your Social Media Engagement",
-      category: "Digital Marketing",
+      title: "Understanding Botox: A Modern Aesthetic Marvel",
+      slug:"understanding-botox-modern-aesthetic-marvel",
+      category: "Botox",
       date: "February 10, 2024",
       author: "John Doe",
     },
     content: {
       content1:
-        "At preline, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow.",
+        "Botox, scientifically known as Botulinum toxin, has become a cornerstone in the aesthetic and medical fields due to its unique properties. Initially discovered for its medical applications, Botox has gained immense popularity for its ability to smooth wrinkles and fine lines. This neurotoxic protein temporarily paralyzes muscles, leading to a reduction in the appearance of facial creases, offering a rejuvenated look without the need for invasive surgical procedures.",
       content2:
-        "We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.",
+        "Beyond its cosmetic allure, Botox's versatility extends into the medical realm, where it serves as a treatment for a variety of conditions. From reducing excessive sweating (hyperhidrosis) to managing chronic migraine headaches, Botox provides relief where traditional medications may fall short. Its application in treating muscle spasms, such as those seen in cerebral palsy, showcases its therapeutic potential, offering improved quality of life for many patients.",
       content3:
-        "As we've grown, we've seen how Preline has helped companies such as Spotify, Microsoft, Airbnb, Facebook, and Intercom bring their designers closer together to create amazing things. We've also learned that when the culture of sharing is brought in earlier, the better teams adapt and communicate with one another.",
-      content4: "That's why we are excited to share that we now have a",
-      content5backLink: "free version of Preline",
+        "The Botox procedure is straightforward and minimally invasive, typically completed within minutes. A fine needle injects small amounts of the toxin into specific muscles, causing minimal discomfort. The effects begin to appear within a few days, reaching full potency in about two weeks. Although the results are temporary, lasting three to six months, many find the procedure's efficacy and simplicity a worthwhile trade-off for its transient nature.",
+      content4: "While Botox is widely considered safe, it is crucial to seek treatment from qualified professionals. The procedure's success and safety largely depend on the expertise of the practitioner. Potential side effects, such as bruising, swelling, or temporary muscle weakness, underscore the importance of consulting with a healthcare provider to determine if",
+      content5backLink: "Botox",
       content5:
-        "which will allow individual designers, startups and other small teams a chance to create a culture of openness early on.",
+        " is the right choice for you.",
       content6:
-        "To say that switching to Preline has been life-changing is an understatement. My business has tripled and I got my life back.",
-      subtitle: "Bringing the culture of sharing to everyone",
+        "Despite its numerous benefits, Botox treatments can have side effects such as swelling or bruising at the injection site, headaches, and in rare cases, the toxin may spread to other parts of the body, leading to more serious health issues.",
+      subtitle: "Embracing the Benefits of Botox",
       content7:
-        "We know the power of sharing is real, and we want to create an opportunity for everyone to try Preline and explore how transformative open communication can be. Now you can have a team of one or two designers and unlimited spectators (think PMs, management, marketing, etc.) share work and explore the design process earlier.",
+        "As Botox continues to evolve, its acceptance and utilization are likely to expand, driven by ongoing research and innovation. Whether seeking to diminish the signs of aging or to address specific medical conditions, Botox represents a bridge between the desire for non-invasive treatment options and the pursuit of effective results. Its growing role in enhancing both appearance and well-being highlights its significance in the modern aesthetic and medical landscapes.",
       subcontent1:
-        "Preline allows us to collaborate in real time and is a really great way for leadership on the team to stay up-to-date with what everybody is working on,",
-      subcontentUrl1: "said",
-      subcontent2: "Preline opened a new way of sharing. It's a persistent way for everyone to see and absorb each other's work, said David Scott, Creative Director at",
-      subcontentUrl2: "EvenBrite",
+        "",
+      subcontentUrl1: "",
+      subcontent2:
+        "",
+      subcontentUrl2: "",
       content8:
-        "Preline opened a new way of sharing. It's a persistent way for everyone to see and absorb each other's work, said David Scott, Creative Director at",
+        "",
 
-      author: "Nicole Grazioso",
+      author: "",
       additionalResources: {
         subtitle: "Additional Resources:",
         resources: [
@@ -47,21 +48,34 @@ const ArticleJson = [
         ],
       },
       content8:
-        "Stay tuned for more articles on digital marketing and social media strategies!",
+        "",
     },
     images: [
-      { url: "https://images.unsplash.com/photo-1670272505340-d906d8d77d03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80", alt: "Working process" },
-      { url: "https://images.unsplash.com/photo-1671726203638-83742a2721a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80", alt: "Image 2" },
-      { url: "https://images.unsplash.com/photo-1671726203394-491c8b574a0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=988&q=80", alt: "Image 3" },
-      { url: "https://images.unsplash.com/photo-1671726203454-488ab18f7eda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80", alt: "A man and a woman looking at a cell phone."},
+      {
+        url: "https://images.unsplash.com/photo-1598300188904-6287d52746ad?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        alt: "Woman botox",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1664107675676-a49855f3e241?q=80&w=2874&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        alt: "Botox",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1623682687826-fe06bf64e6d8?q=80&w=2624&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        alt: "Botox syringe",
+      },
+      {
+        url: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        alt: "Treatment botox",
+      },
     ],
     seo: [
-      "Digital Marketing",
-      "Social Media",
-      "Engagement",
-      "Content Strategy",
+      "Botox",
+      "Treatment",
+      "Beauty Clinic",
+      "Skin treatment",
     ],
   },
+
 ];
 
 export default ArticleJson;

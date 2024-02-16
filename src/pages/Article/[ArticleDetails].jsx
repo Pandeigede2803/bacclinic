@@ -2,8 +2,24 @@ import BlogArticle from "@/components/BlogArticle";
 import SidebarArticle from "@/components/SidebarArticle";
 import React from "react";
 import ArticleJson from "@/components/Json/ArticleJson";
+import { useRouter } from "next/router";
 
 const index = () => {
+  const router = useRouter();
+  // Note the change here: 'TreatmentDetails' matches the file name
+  const { ArticleDetails } = router.query; // Pastikan sesuai dengan query yang kamu gunakan
+
+  const articleDetail = ArticleJson.find(
+    (article) => article.metadata.slug === ArticleDetails
+  );
+  
+  // Kemudian gunakan `articleDetail` untuk menampilkan detail artikel
+  if (!articleDetail) {
+    return <div>Article not found</div>;
+  }
+
+
+
   return (
     <div>
       {ArticleJson.map((article, index) => (

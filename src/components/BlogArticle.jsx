@@ -43,7 +43,7 @@ const BlogArticle = ({
               <div className="space-y-5 lg:space-y-8">
                 <Link
                   className="inline-flex items-center gap-x-1.5 text-sm text-gray-600 decoration-2 hover:underline"
-                  href="#"
+                  href="/"
                 >
                   <svg
                     className="flex-shrink-0 w-4 h-4"
@@ -135,7 +135,7 @@ const BlogArticle = ({
                     <h3 className="text-2xl font-semibold">{subtitle}</h3>
                     <p className="text-lg text-gray-800">{content7}</p>
                   </div>
-                  <ul className="list-disc list-outside space-y-5 ps-5 text-lg text-gray-800">
+                  <ul className=" space-y-5 ps-5 text-lg text-gray-800">
                     <li className="ps-2">
                       {subcontent1} {" "}
                       <Link
@@ -153,7 +153,7 @@ const BlogArticle = ({
                       >
                         {subcontentUrl2}
                       </Link>
-                      .
+                      
                     </li>
                   </ul>
                   <p className="text-lg text-gray-800">{content8}</p>
@@ -163,25 +163,25 @@ const BlogArticle = ({
                     <div>
                       <a
                         className="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200"
-                        href="#"
+                        href="/"
                       >
                         {seo1}
                       </a>
                       <a
                         className="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200"
-                        href="#"
+                        href="/"
                       >
                         {seo2}
                       </a>
                       <a
                         className="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200"
-                        href="#"
+                        href="/"
                       >
                         {seo3}{" "}
                       </a>
                       <a
                         className="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200"
-                        href="#"
+                        href="/"
                       >
                         {seo4}
                       </a>

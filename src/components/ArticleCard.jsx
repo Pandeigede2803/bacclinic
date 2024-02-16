@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-const ArticleCard = ({ imageUrl, title, description }) => {
+const ArticleCard = ({ imageUrl, title, description,slug }) => {
   return (
     <Link
       className="group rounded-xl overflow-hidden"
-      href="#"
+      href={`/Article/${slug}`}
     >
       <div className="sm:flex">
         <div className="flex-shrink-0 relative rounded-xl overflow-hidden w-full sm:w-56 h-44">
