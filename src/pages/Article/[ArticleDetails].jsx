@@ -19,7 +19,6 @@ const index = () => {
   }
 
 
-
   return (
     <div>
       {ArticleJson.map((article, index) => (

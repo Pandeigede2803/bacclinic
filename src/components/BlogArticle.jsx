@@ -161,30 +161,30 @@ const BlogArticle = ({
                   {/* category icon */}
                   <div className="grid lg:flex lg:justify-between lg:items-center gap-y-5 mt-8 lg:gap-y-0">
                     <div>
-                      <a
+                      <Link
                         className="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200"
                         href="/"
                       >
                         {seo1}
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200"
                         href="/"
                       >
                         {seo2}
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200"
                         href="/"
                       >
                         {seo3}{" "}
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="m-0.5 inline-flex items-center gap-1.5 py-2 px-3 rounded-full text-sm bg-gray-100 text-gray-800 hover:bg-gray-200"
                         href="/"
                       >
                         {seo4}
-                      </a>
+                      </Link>
                     </div>
 
                     {/* icon right */}
