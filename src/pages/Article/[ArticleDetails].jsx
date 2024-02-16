@@ -4,7 +4,7 @@ import React from "react";
 import ArticleJson from "@/components/Json/ArticleJson";
 import { useRouter } from "next/router";
 
-const index = () => {
+const Page = () => {
   const router = useRouter();
   // Note the change here: 'TreatmentDetails' matches the file name
   const { ArticleDetails } = router.query; // Pastikan sesuai dengan query yang kamu gunakan
@@ -61,4 +61,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Page;
