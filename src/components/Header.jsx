@@ -60,7 +60,7 @@ const Header = () => {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        Bebaskan pesona kecantikanmu <br />di klinik Bali Aesthetic Centre
+        Unleash your beauty charm <br />at Bali Aesthetic Centre clinic
       </motion.p>
       <motion.div
         className="flex md:flex-row flex-col space-y-[20px] md:space-y-0.5 w-[270px] md:w-fit md:space-x-[43px]"

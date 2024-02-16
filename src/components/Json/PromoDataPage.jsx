@@ -10,7 +10,7 @@ const PromoDataPage = [
   {
     id: 2,
     imageUrl:
-      "https://ik.imagekit.io/m1akscp5q/INSTAGRAM%20POTRAIT%20BAC%20(Your%20Story).jpg?updatedAt=1706849917799",
+      "https://ik.imagekit.io/m1akscp5q/promo8.jpg?updatedAt=1708073755409",
     title: "Promo Card 2",
     link:"/#",
     content:
@@ -19,7 +19,7 @@ const PromoDataPage = [
   {
     id: 3,
     imageUrl:
-      "https://ik.imagekit.io/m1akscp5q/INSTAGRAM%20POTRAIT%20BAC%20(Your%20Story).jpg?updatedAt=1706849917799",
+      "https://ik.imagekit.io/m1akscp5q/promo9.jpg?updatedAt=1708073755338",
     title: "Promo Card 3",
     link:"/#",
     content:"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -27,7 +27,7 @@ const PromoDataPage = [
   {
     id: 4,
     imageUrl:
-      "https://ik.imagekit.io/m1akscp5q/INSTAGRAM%20POTRAIT%20BAC%20(Your%20Story).jpg?updatedAt=1706849917799",
+      "https://ik.imagekit.io/m1akscp5q/promo10.jpg?updatedAt=1708073755257",
     title: "Promo Card 3",
     link:"/#",
     content:"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -35,7 +35,7 @@ const PromoDataPage = [
   {
     id: 5,
     imageUrl:
-      "https://ik.imagekit.io/m1akscp5q/INSTAGRAM%20POTRAIT%20BAC%20(Your%20Story).jpg?updatedAt=1706849917799",
+      "https://ik.imagekit.io/m1akscp5q/promo6.jpg?updatedAt=1708073755263",
     title: "Promo Card 3",
     link:"/#",
     content:"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -43,7 +43,7 @@ const PromoDataPage = [
   {
     id: 6,
     imageUrl:
-      "https://ik.imagekit.io/m1akscp5q/INSTAGRAM%20POTRAIT%20BAC%20(Your%20Story).jpg?updatedAt=1706849917799",
+      "https://ik.imagekit.io/m1akscp5q/story%20januari%20bac%20(1).jpg?updatedAt=1708074110722",
     title: "Promo Card 3",
     link:"/#",
     content:"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",

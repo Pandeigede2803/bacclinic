@@ -1,10 +1,12 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FaChevronDown } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isClinicalDropdownOpen, setIsClinicalDropdownOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
@@ -13,6 +15,7 @@ const Navbar = () => {
   const closeAllMenus = () => {
     setIsMenuOpen(false);
     setIsDropdownOpen(false);
+    setIsClinicalDropdownOpen(false);
   };
 
   return (
@@ -106,9 +109,47 @@ const Navbar = () => {
                         href="/Services/detox-skin-treatment"
                         className="block px-4 py-2 hover:bg-primary "
                       >
-                        Skin Treatment
+                        Basic Skin Treatment
                       </Link>
                     </li>
+                    <li onClick={(event) => event.stopPropagation()}>
+                      <button
+                        onClick={() => {
+                          setIsClinicalDropdownOpen(!isClinicalDropdownOpen);
+                          event.stopPropagation(); // Mencegah event bubbling.
+                        }}
+                        className="w-full flex mx-4"
+                      >
+                        Clinical Treatment
+                        <FaChevronDown
+                          className={`w-2 h-auto my-auto mx-2 ${
+                            isClinicalDropdownOpen ? "rotate-180" : ""
+                          }`}
+                        />
+                      </button>
+                      {isClinicalDropdownOpen && (
+                        <ul className="relative z-20 bg-white">
+                          <li onClick={closeAllMenus}>
+                            <Link
+                              href="/Services/acne-treatment"
+                              className="block ml-1 text-secondary px-4 py-2 hover:bg-primary"
+                            >
+                              Acne Treatment
+                            </Link>
+                          </li>
+                          <li onClick={closeAllMenus}>
+                            <Link
+                              href="/Services/acne-treatment"
+                              className="block ml-1 text-secondary px-4 py-2 hover:bg-primary"
+                            >
+                             Gold Treatment
+                            </Link>
+                          </li>
+                          {/* Tambahkan treatment lainnya di sini jika diperlukan */}
+                        </ul>
+                      )}
+                    </li>
+
                     <li onClick={closeAllMenus}>
                       <Link
                         href="/Services/skin-booster"
@@ -149,7 +190,7 @@ const Navbar = () => {
 
             <li>
               <Link
-              onClick={closeAllMenus}
+                onClick={closeAllMenus}
                 href="/about"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0    "
               >
@@ -158,7 +199,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-              onClick={closeAllMenus}
+                onClick={closeAllMenus}
                 href="/Promo"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0     "
               >
@@ -168,7 +209,7 @@ const Navbar = () => {
 
             <li>
               <Link
-              onClick={closeAllMenus}
+                onClick={closeAllMenus}
                 href="/contact"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0  "
               >
@@ -183,4 +224,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;;;
+export default Navbar;
