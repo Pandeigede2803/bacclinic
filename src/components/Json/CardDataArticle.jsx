@@ -22,12 +22,14 @@ const CardDataArticle = [
     description: "The aesthetic treatment landscape is constantly evolving, with innovative technologies and techniques emerging each year. In 2024, we've seen a surge in demand..",
     link: "#",
   },
+
+ 
   {
     imageUrl:
-      "https://images.unsplash.com/photo-1555820585-c5ae44394b79?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHNraW4lMjB0cmVhdG1lbnRzfGVufDB8fDB8fHww",
-    title: "How to Care for Your Skin After Clinic Treatments: Tips to Maximize Results",
-    description: "Post-treatment skin care is crucial for enhancing and extending the results of your clinic treatments. Whether you've just had a facial, laser therapy, chemical peel, or any other aesthetic procedure",
-    slug: "#",
+      "https://literasipost.com/wp-content/uploads/2023/10/1696736861939_copy_768x432.jpg",
+    title: "Buka Di Denpasar, Bali Aesthetic Centre Hadirkan Layanan Plastic Surgery Dan Beauty Clinic",
+    description: "LITERASIPOST.COM, DENPASAR | Bali Aesthetic Centre (BAC), Plastic Surgery and Beauty Clinic, melaksanakan Grand Opening di Jl. Bypass I Gusti Ngurah Rai 225X, Sesetan, Denpasar, Sabtu (7/10/2023). Acara ini turut dihadiri oleh artis/penyanyi Dewi Gita",
+    slug: "Bali-Aesthetic-Centre-Hadirkan-Layanan",
   },
 ];
 

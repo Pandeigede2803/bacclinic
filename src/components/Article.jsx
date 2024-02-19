@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ArticleCard from "@/components/ArticleCard";
 import CardDataArticle from "./Json/CardDataArticle";
 
 const Article = () => {
   // Sample card data
-  const cardData = CardDataArticle
+
+  const [randomArticles, setRandomArticles] = useState([]);
+
+  // Function to shuffle array and pick first 4 items
+  const shuffleAndPick = (array) => {
+    const shuffled = array.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, 4);
+  };
+
+  useEffect(() => {
+    // Set random articles on client side after component mounts
+    setRandomArticles(shuffleAndPick(CardDataArticle));
+  }, []);
+
 
   return (
     <div className="font-primary mt-20">
@@ -14,7 +27,7 @@ const Article = () => {
         {/* Grid */}
         <div className="grid lg:grid-cols-2 lg:gap-y-16 gap-10">
           {/* Map over the cardData and render each ArticleCard component */}
-          {cardData.map((data, index) => (
+          {randomArticles.map((data, index) => (
             <ArticleCard
               key={index}
               imageUrl={data.imageUrl}

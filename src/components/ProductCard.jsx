@@ -7,7 +7,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 const ProductCard = ({ src, title, alt, id, link }) => {
   return (
     <div key={id} className="font-primary relative group mx-4 my-10 transition duration-300 ease-in-out transform hover:scale-110">
-      <Link href={link}>
+      <Link href={link} target='blank'>
         <div aria-label={title}> {/* Added for accessibility and to ensure proper anchor tag usage */}
           <div className="relative">
             <Image
