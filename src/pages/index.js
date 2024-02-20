@@ -70,6 +70,8 @@ export default function Home() {
           avatar="https://ik.imagekit.io/m1akscp5q/logo%20bac%20vertikal.png?updatedAt=1706761240275"
           chatMessage="Hello there! 🤝 How can we help?"
         />
+
+       
       </main>
     </>
   );

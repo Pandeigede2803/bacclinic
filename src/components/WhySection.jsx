@@ -32,7 +32,7 @@ const WhySection = () => {
       <div className=" bg-primary md:h-[909px] h-[1400px] w-full bg-cover bg-center bg-opacity-50 flex justify-center flex-col items-center align-middle">
         <div className="opacity-80 my-20 md:mx-20 mx-40 space-y-2 rounded-3xl bg-white w-full md:w-fit lg:w-[1200px] h-[1897.49px] flex flex-col justify-start align-middle items-center text-white">
           <h1 className="my-20 text-center text-black font-primary text-3xl">
-            WHY BALI AESTHETIC CLINIC
+            WHY BALI AESTHETIC CENTRE
           </h1>
           <motion.div
             initial="hidden"

@@ -11,9 +11,10 @@ const Header = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
   return (
-    // Example JSX
-    <div className="bg-[url('https://ik.imagekit.io/m1akscp5q/background%20image.png?updatedAt=1707296969772')] h-[909px] w-full bg-cover bg-center absolute top-0 bg-opacity-100">
-    <div className="space-y-[60px] flex flex-col justify-center align-middle md:ml-[87px] ml-4 md:my-[195px] my-[95px]">
+    // change opacity of background image
+    <div className=" z-0 bg-[url('https://ik.imagekit.io/m1akscp5q/background%20image.png?updatedAt=1707296969772')] h-[909px] w-full bg-cover bg-center absolute top-0 bg-opacity-75">
+
+    <div className="space-y-[60px] z-0 flex flex-col justify-center align-middle md:ml-[87px] ml-4 md:my-[195px] my-[95px]">
       <motion.span
         className="flex flex-row items-center text-center"
         variants={itemVariants}

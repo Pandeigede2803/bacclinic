@@ -7,7 +7,7 @@ const PromoCards = ({ imageUrl, title, alt, link }) => {
   return (
     <div>
       <div className="w-auto relative overflow-hidden transition  transform hover:scale-105">
-        <Link href={link}>
+        <Link href={link} target="blank">
           <div>
             <Image
               src={imageUrl}

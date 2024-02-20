@@ -168,7 +168,7 @@ const Navbar = () => {
                     </li>
                     <li onClick={closeAllMenus}>
                       <Link
-                        href="/Services/Plastic-surgery"
+                        href="/Services/PlasticSurgery"
                         className="block px-4 py-2 hover:bg-primary "
                       >
                         Plastic Surgery
