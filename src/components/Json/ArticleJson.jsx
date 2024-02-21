@@ -16,7 +16,7 @@ const ArticleJson = [
       content3:
         "The Botox procedure is straightforward and minimally invasive, typically completed within minutes. A fine needle injects small amounts of the toxin into specific muscles, causing minimal discomfort. The effects begin to appear within a few days, reaching full potency in about two weeks. Although the results are temporary, lasting three to six months, many find the procedure's efficacy and simplicity a worthwhile trade-off for its transient nature.",
       content4: "While Botox is widely considered safe, it is crucial to seek treatment from qualified professionals. The procedure's success and safety largely depend on the expertise of the practitioner. Potential side effects, such as bruising, swelling, or temporary muscle weakness, underscore the importance of consulting with a healthcare provider to determine if",
-      content5backLink: "Botox",
+      content5backLink: "7 Rahasia Perawatan Kulit Wajah untuk Mendapatkan Glow Up Alami di 2024",
       content5:
         " is the right choice for you.",
       content6:
@@ -26,10 +26,10 @@ const ArticleJson = [
         "As Botox continues to evolve, its acceptance and utilization are likely to expand, driven by ongoing research and innovation. Whether seeking to diminish the signs of aging or to address specific medical conditions, Botox represents a bridge between the desire for non-invasive treatment options and the pursuit of effective results. Its growing role in enhancing both appearance and well-being highlights its significance in the modern aesthetic and medical landscapes.",
       subcontent1:
         "",
-      subcontentUrl1: "",
+      subcontentUrl1: "Cara Menghilangkan Jerawat dan Bekasnya dengan 5 Langkah Mudah Berdasarkan Ahli Dermatologi",
       subcontent2:
         "",
-      subcontentUrl2: "",
+      subcontentUrl2: "Perawatan Anti-Aging Terbaik 2024: Panduan Lengkap untuk Kulit Awet Muda",
       content8:
         "",
 
@@ -78,6 +78,83 @@ const ArticleJson = [
   {
     key: "2",
     metadata: {
+      title: "Cara Menghilangkan Jerawat dan Bekasnya dengan 4 Langkah Mudah Berdasarkan Ahli Dermatologi",
+      slug:"Cara-Menghilangkan-Jerawat-Bekas Jerawat-Ahli-Dermatologi",
+      category: "Acne",
+      date: "Februari 21, 2024",
+      author: "Pande I Gede Sudiahna",
+    },
+    content: {
+      content1:
+        "Jerawat sering kali meninggalkan dua masalah sekaligus: jerawat itu sendiri dan bekasnya yang membandel. Namun, tidak perlu merasa putus asa karena ada langkah-langkah berdasarkan saran ahli dermatologi yang bisa membantu mengatasi kedua masalah ini. Berikut adalah lima langkah mudah yang bisa Anda terapkan untuk mendapatkan kulit yang lebih bersih dan sehat.",
+      content2:
+        "1. Membersihkan Wajah dengan Benar, Langkah pertama adalah membersihkan wajah dengan produk yang tepat. Pilihlah pembersih wajah yang lembut namun efektif untuk mengangkat kotoran dan minyak tanpa membuat kulit menjadi kering. Ahli dermatologi menyarankan untuk mencuci wajah dua kali sehari, pagi dan malam, serta setelah berolahraga untuk memastikan pori-pori tetap bersih.",
+      content3:
+        "2. Menggunakan Produk yang Mengandung Bahan Aktif, Untuk mengatasi jerawat, gunakan produk yang mengandung bahan aktif seperti salicylic acid, benzoyl peroxide, atau retinoids. Bahan-bahan ini terbukti efektif mengurangi jerawat dan mencegah pembentukan jerawat baru. Namun, penting untuk memulai dengan konsentrasi yang rendah untuk menghindari iritasi kulit.",
+      content4: "3. Perlindungan dari Sinar Matahari, Sinar UV dapat memperburuk bekas jerawat dan membuatnya lebih sulit hilang. Ahli dermatologi menekankan pentingnya menggunakan sunscreen setiap hari, bahkan ketika berawan. Pilih sunscreen yang ramah terhadap kulit berjerawat, seperti formula yang bebas minyak dan non-comedogenic.",  
+      content5backLink: "Perawatan botox tahun 2024 di Indonesia",
+      content5:
+        "4. Konsultasi dengan Ahli Dermatologi , Jika jerawat dan bekasnya menjadi masalah yang serius, sangat disarankan untuk berkonsultasi dengan ahli dermatologi. Mereka dapat memberikan saran yang lebih spesifik dan perawatan seperti peeling kimia, laser, atau terapi cahaya yang bisa lebih efektif menghilangkan bekas jerawat.",
+      content6:
+        "Mengatasi jerawat dan bekasnya memang membutuhkan kesabaran dan konsistensi dalam perawatan. Dengan mengikuti langkah-langkah berdasarkan saran ahli dermatologi, Anda bisa melihat perbaikan yang signifikan pada kulit Anda. Ingat, setiap kulit berbeda, jadi penting untuk menyesuaikan perawatan dengan kebutuhan unik kulit Anda.",
+      subtitle: "Pentingnya Rutinitas Perawatan Kulit",
+      content7:
+        "Membangun rutinitas perawatan kulit yang baik adalah kunci untuk mencegah kembali munculnya jerawat dan bekasnya. Dengan konsistensi dan produk yang tepat, kulit bersih dan sehat bukan hanya mimpi. Mulailah langkah Anda hari ini dan rasakan perbedaannya.",
+      subcontent1:
+        "",
+      subcontentUrl1: "Metode skin tightening tirus dengan singkat tanpa suntik",
+      subcontent2:
+        "",
+      subcontentUrl2: "3 perawatan untuk treatment kulit acne",
+      content8:
+        "",
+
+      author: "",
+      additionalResources: {
+        subtitle: "Additional Resources:",
+        resources: [
+          {
+            title: "10 Proven Strategies for Social Media Success",
+            url: "https://example.com/strategies",
+          },
+          {
+            title: "The Ultimate Guide to Instagram Marketing",
+            url: "https://example.com/instagram-guide",
+          },
+        ],
+      },
+      content8:
+        "",
+    },
+    images: [
+      {
+        url: "https://ik.imagekit.io/m1akscp5q/jerawat28.png?updatedAt=1708495188469",
+        alt: "Woman with acne face",
+      },
+      {
+        url: "https://ik.imagekit.io/m1akscp5q/jerawat27.png?updatedAt=1708495188580",
+        alt: "Acne Treatment",
+      },
+      {
+        url: "https://ik.imagekit.io/m1akscp5q/jerawat26.png?updatedAt=1708495188464",
+        alt: "Acne Woman Face",
+      },
+      {
+        url: "https://ik.imagekit.io/m1akscp5q/jerawat30.png?updatedAt=1708495188838",
+        alt: "woman with acne",
+      },
+    ],
+    seo: [
+      "Launching",
+      "Bali Aesthtetic Centre",
+      "Beauty Clinic",
+      "Skin treatment",
+    ],
+  },
+
+  {
+    key: "3",
+    metadata: {
       title: "Buka Di Denpasar, Bali Aesthetic Centre Hadirkan Layanan Plastic Surgery Dan Beauty Clinic",
       slug:"Bali-Aesthetic-Centre-Hadirkan-Layanan",
       category: "Launching BAC",
@@ -91,8 +168,8 @@ const ArticleJson = [
         "Owner BAC, I Gusti Ayu Indrawati dalam sambutannya menyampaikan bahwa kesehatan kulit bukanlah sebuah kondisi, melainkan keadaan yang harus dipertahankan. Untuk itu dibutuhkan usaha terus menerus dan berkelanjutan untuk menjaga dan merawatnya. Usaha untuk menjaga kesehatan saat ini tidaklah mudah. Di era sosial media ini, bisa dikatakan sangat banyak dis-infomasi dan mis-informasi merajalela. Tidak mudah memperoleh sumber informasi terkait kesehatan yang bisa dipercaya.",
       content3:
         "“Bali Aesthetic Centre, hadir di kota Denpasar dengan konsep klinik kesehatan kulit dan bedah plastik, bertujuan untuk dapat memberikan pelayanan terbaik dalam menjawab kebutuhan akan kesehatan dan perawatan kulit bagi masyarakat luas,” kata Ayu Indrawati.",
-      content4: "Lanjutnya, hal tersebut tentu saja didukung dengan desain gedung klinik yang minimalis elegan, suasana yang nyaman, serta layanan dermatologi dan plastic surgery yang sesuai dengan kebutuhan. Juga, didukung dengan peralatan modern yang berstandar Medical Grade, serta produk yang",
-      content5backLink: "kompeten",
+      content4: "Lanjutnya, hal tersebut tentu saja didukung dengan desain gedung klinik yang minimalis elegan, suasana yang nyaman, serta layanan dermatologi dan plastic surgery yang sesuai dengan kebutuhan. Juga, didukung dengan peralatan modern yang berstandar Medical Grade, serta produk yang kompeten",
+      content5backLink: "Perawatan botox tahun 2024 di Indonesia",
       content5:
         "Representative Owner BAC, Karina Suryandari menambahkan bahwa fasilitas tidak ada artinya tanpa sumber daya manusia yang baik. Hingga saat ini, BAC didukung oleh 6 tenaga dokter, 5 perawat, 1 apoteker dan 1 asisten apoteker, serta staf profesional lainnya. BAC memiliki visi yaitu menjadi klinik utama yang berfokus pada pencegahan, perawatan, dan pengobatan penyakit sesuai dengan kebutuhan pasien, dengan ke depannya mengembangkan cabang-cabang perusahaan baru, baik di tingkat kabupaten dan nasional.",
       content6:
@@ -102,10 +179,10 @@ const ArticleJson = [
         "“Di sini kami melayani semua kalangan masyarakat dengan harga cukup terjangkau, bahkan mulai dari 200 ribu Rupiah sudah bisa treatment. Dalam momen grand opening ini kami memberikan promo khusus di antaranya untuk botox, skin booster, dan lainnya. Sekali lagi di sini yang kami utamakan adalah pelayanan yang paripurna,” pungkasnya. Penyanyi Dewi Gita turut mendukung dibukanya Bali Aesthetic Center (BAC). “Saya pribadi udah terikat kekeluargaan dengan Owner BAC, jadi saya sangat mendukung kehadiran BAC untuk mempercantik para wanita di Bali khususnya, tapi tidak menutup juga untuk para pria. Saya full doa untuk BAC semoga ke depan makin eksis, lancar, berkah, dan tentunya menjadi pilihan bagi masyarakat Bali,” ungkapnya. (igp)",
       subcontent1:
         "",
-      subcontentUrl1: "",
+      subcontentUrl1: "Metode skin tightening tirus dengan singkat tanpa suntik",
       subcontent2:
         "",
-      subcontentUrl2: "",
+      subcontentUrl2: "3 perawatan untuk treatment kulit acne",
       content8:
         "",
 

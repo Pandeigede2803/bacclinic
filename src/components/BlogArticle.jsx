@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 import React from "react";
 import SidebarArticle from "./SidebarArticle";
 
@@ -65,15 +65,22 @@ const BlogArticle = ({
                 <div className="flex items-center gap-x-5">
                   <Link
                     className="inline-flex items-center gap-1.5 py-1 px-3 sm:py-2 sm:px-4 rounded-full text-xs sm:text-sm bg-gray-100 text-gray-800 hover:bg-gray-200"
-                    href="#"
+                    href="/"
                   >
                     {category}
                   </Link>
                   <p className="text-xs sm:text-sm text-gray-800">{date}</p>
                 </div>
                 <p className="text-lg text-gray-800">{content1}</p>
-                <p className="text-lg text-gray-800">{content2}</p>
-                <div className="text-center">
+
+                <p className="text-lg  text-gray-800">{content2}</p>
+
+                <Link href="/">
+                  <p className=" text-blue-600 my-8 text-lg hover:text-black italic underline underline-offset-1">
+                  {subcontentUrl1}
+                  </p>
+                </Link>
+                <div className="text-center mt-2">
                   <div className="grid lg:grid-cols-2 gap-3">
                     <div className="grid grid-cols-2 lg:grid-cols-1 gap-3">
                       <figure className="relative w-full h-60">
@@ -105,21 +112,30 @@ const BlogArticle = ({
                 </div>
                 <p className="text-lg text-gray-800">{content3}</p>
                 <p className="text-lg text-gray-800">
-                  {content4} {" "}
-                  <Link
-                    className="text-blue-600 decoration-2 hover:underline font-medium"
-                    href="#"
-                  >
-                    {content5backLink}
-                  </Link> {" "}
+                  {content4}{" "}
+               
+                  <br></br> <br></br>
                   {content5}
                 </p>
+                <Link
+                    className="text-blue-600 decoration-2 hover:text-black  hover:underline font-medium italic underline underline-offset-1"
+                    href="/"
+                  >
+                    <p className="my-4">{subcontentUrl2}</p>
+                  </Link>{" "}
                 <blockquote className="text-center p-4 sm:px-7">
                   <p className="text-xl font-medium text-gray-800 lg:text-2xl lg:leading-normal xl:text-2xl xl:leading-normal">
                     {content6}
                   </p>
                   <p className="mt-5 text-gray-800">{author}</p>
                 </blockquote>
+
+                <Link href="/">
+                  <p className=" text-blue-600 text-lg hover:text-black italic underline underline-offset-1">
+                  {content5backLink}
+                  
+                  </p>
+                </Link>
                 <figure>
                   <img
                     className="w-full object-cover rounded-xl"
@@ -137,23 +153,22 @@ const BlogArticle = ({
                   </div>
                   <ul className=" space-y-5 ps-5 text-lg text-gray-800">
                     <li className="ps-2">
-                      {subcontent1} {" "}
+                      {subcontent1}{" "}
                       <Link
                         className="text-blue-600 decoration-2 hover:underline font-medium"
                         href="#"
                       >
-                        {subcontentUrl1}
+                       
                       </Link>{" "}
                     </li>
                     <li className="ps-2">
-                      {subcontent2} {" "}
+                      {subcontent2}{" "}
                       <Link
                         className="text-blue-600 decoration-2 hover:underline font-medium"
                         href="#"
                       >
-                        {subcontentUrl2}
+                        
                       </Link>
-                      
                     </li>
                   </ul>
                   <p className="text-lg text-gray-800">{content8}</p>
@@ -269,7 +284,7 @@ const BlogArticle = ({
               </div>
             </div>
           </div>
-          <SidebarArticle/>
+          <SidebarArticle />
 
           {/* Sidebar */}
         </div>

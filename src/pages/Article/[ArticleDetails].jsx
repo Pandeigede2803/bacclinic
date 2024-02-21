@@ -3,6 +3,7 @@ import SidebarArticle from "@/components/SidebarArticle";
 import React from "react";
 import ArticleJson from "@/components/Json/ArticleJson";
 import { useRouter } from "next/router";
+import Head from 'next/head';
 
 const Page = () => {
   const router = useRouter();
@@ -12,16 +13,42 @@ const Page = () => {
   const articleDetail = ArticleJson.find(
     (article) => article.metadata.slug === ArticleDetails
   );
-  
+
   // Kemudian gunakan `articleDetail` untuk menampilkan detail artikel
   if (!articleDetail) {
     return <div>Article not found</div>;
   }
 
+    // Update meta tags based on article details
+    const metaData = {
+      title: articleDetail.metadata.title,
+      description: articleDetail.metadata.description,
+      slug: articleDetail.metadata.slug,
+      imageUrl: articleDetail.metadata.imageUrl,
+    };
+  
 
   return (
     <div>
-     <BlogArticle
+      <Head>
+        <title>{metaData.title}</title>
+        <meta name="description" content={metaData.description} />
+        <meta property="og:title" content={metaData.title} />
+        <meta property="og:description" content={metaData.description} />
+        <meta
+          property="og:url"
+          content={`https://bacclinic.id/${metaData.slug}`}
+        />{" "}
+   
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content={metaData.imageUrl} />
+        <link
+          rel="canonical"
+          href={`https://bacclinic.id/${metaData.slug}`}
+        />{" "}
+      </Head>
+
+      <BlogArticle
         title={articleDetail.metadata.title}
         category={articleDetail.metadata.category}
         date={articleDetail.metadata.date}
