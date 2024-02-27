@@ -15,26 +15,41 @@ const ContactForm = () => {
       [name]: value,
     }));
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("/api/send-email", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(emailData),
-    });
-
-    const result = await response.json();
-    if (result.success) {
-      alert("Email berhasil dikirim");
-      // Optionally reset the form state here if needed
-    } else {
-      alert("Gagal mengirim email");
+  
+    // Logging to indicate the function has started
+    console.log("Sending email...");
+  
+    try {
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(emailData),
+      });
+  
+      const result = await response.json();
+  
+      // Logging the result to see what the server responded with
+      console.log("Response from the server: ", result);
+  
+      if (result.success) {
+        alert("Email berhasil dikirim");
+        console.log("Email sent successfully.");
+        // Optionally reset the form state here if needed
+      } else {
+        alert("Gagal mengirim email");
+        console.log("Failed to send email.");
+      }
+    } catch (error) {
+      // Logging any errors that occur during the fetch or while handling the response
+      console.error("Error sending email: ", error);
+      alert("An error occurred while sending the email.");
     }
   };
-
+  
   return (
     <section className="bg-white font-primary">
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
