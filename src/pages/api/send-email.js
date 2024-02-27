@@ -4,6 +4,14 @@ import ReactDOMServer from "react-dom/server";
 import MyEmailComponent from "../../components/MyEmailComponent"; // Adjust the path as per your project structure
 
 export default async function sendEmail(req, res) {
+
+  await NextCors(req, res, {
+    methods: ['POST'],
+    origin: "https://bacclinic.id", // Restrict to requests from this origin
+    optionsSuccessStatus: 200,
+  });
+
+  
   if (req.method === "POST") {
     // Logic to send email using Resend or a similar service
     // Your existing POST request handling code here...
