@@ -22,7 +22,7 @@ const ContactForm = () => {
     console.log("Sending email...");
   
     try {
-      const response = await fetch("https://www.bacclinic.id/api/send-email", {
+      const response = await fetch("/api/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
