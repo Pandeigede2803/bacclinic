@@ -18,7 +18,7 @@ export default async function sendEmail(req, res) {
     // Logic to send email using Resend or a similar service
     // Your existing POST request handling code here...
     console.log("Receiving email send request");
-    const resend = new Resend(process.env.RESEND_API_KEY);
+    const resend = new Resend("re_ayyvGAku_GJGu5Jud5Jd2pCCr3heJBACa");
     const { to, subject, message, name } = req.body;
     console.log("Email Data:", to, subject, message);
 
