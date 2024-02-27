@@ -44,7 +44,7 @@ const ContactForm = () => {
         <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 sm:text-xl">
           Experiencing skin concerns or interested in our beauty treatments?
           Want to share your thoughts on our services or curious about our
-          wellness programs? We're here to help you glow.
+          wellness programs? We&apos;re here to help you glow.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-8">
