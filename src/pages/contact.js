@@ -1,15 +1,14 @@
 import ContactSection from "@/components/ContactSection";
 import React from "react";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
-import Head from 'next/head';
+import Head from "next/head";
+import ContactForm from "@/components/ContactForm";
 
 const Contact = () => {
   return (
     <div>
       <Head>
-        <title>
-          Beauty Clinic Denpasar Bali - BAC Clinic | Contact us
-        </title>
+        <title>Beauty Clinic Denpasar Bali - BAC Clinic | Contact us</title>
         <meta
           name="description"
           content="BAC Clinic adalah pilihan terbaik untuk perawatan estetika di Denpasar, Bali. Dengan teknologi terkini, kami menawarkan layanan Botox, filler, terapi kulit, dan banyak lagi untuk membantu Anda tampil percaya diri."
@@ -35,6 +34,7 @@ const Contact = () => {
         <link rel="canonical" href="https://bacclinic.id" />
       </Head>
 
+      <ContactForm />
       <ContactSection />
       <FloatingWhatsApp
         phoneNumber="6287777939598"

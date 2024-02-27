@@ -49,7 +49,7 @@ export default class SimpleSlider extends Component {
       centerMode: true,
       centerPadding: "130px",
       accessibility: true,
-      dots: false,
+      dots: true,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -57,7 +57,7 @@ export default class SimpleSlider extends Component {
       speed: 9000,
       autoplaySpeed: 9000,
       cssEase: "ease",
-      arrows: true,
+      arrows: false,
       nextArrow: <NextArrow />,
       prevArrow: <PrevArrow />,
 
@@ -69,7 +69,7 @@ export default class SimpleSlider extends Component {
             slidesToScroll: 1,
             infinite: true,
             centerMode: true,
-            centerPadding: "150px",
+            centerPadding: "10px",
             arrow: false,
           },
         },
@@ -89,13 +89,13 @@ export default class SimpleSlider extends Component {
     };
 
     return (
-      <div className="bg-primary flex flex-col justify-center mx-auto text-center mt-6 py-4">
+      <div className="bg-primary flex flex-col justify-center mx-auto text-center mt-20 py-4">
         {/* Removed the standalone NextArrow component */}
         <h2 className="font-primary text-[29px]">See Our Promo</h2>
         <h2 className="font-primary text-secondary text-[29px]">
           Our Promo This Month
         </h2>
-        <div className="py-10 md:mx-32 lg:mx-10 2xl:mx-60    mx-10 ">
+        <div className="py-10 md:mx-10 lg:mx-10 2xl:mx-60   mx-2 ">
           <Slider {...settings}>
             {promoBanners.map((banner, index) => (
               <div key={index} className="outline-none ">

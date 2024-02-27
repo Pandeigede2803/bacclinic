@@ -106,7 +106,7 @@ const Navbar = () => {
                   >
                     <li onClick={closeAllMenus}>
                       <Link
-                        href="/Services/detox-skin-treatment"
+                        href="/Services/basic-skin-treatment"
                         className="block px-4 py-2 hover:bg-primary "
                       >
                         Basic Skin Treatment
@@ -152,7 +152,7 @@ const Navbar = () => {
 
                     <li onClick={closeAllMenus}>
                       <Link
-                        href="/Services/skin-booster"
+                        href="/Services/skin-energy-treatment"
                         className="block px-4 py-2 hover:bg-primary "
                       >
                         Skin Booster
@@ -160,7 +160,7 @@ const Navbar = () => {
                     </li>
                     <li onClick={closeAllMenus}>
                       <Link
-                        href="/Services/Botox"
+                        href="/Services/botox-treatment"
                         className="block px-4 py-2 hover:bg-primary "
                       >
                         Botox

@@ -8,7 +8,7 @@ const TreatmentGrid = () => {
 
   return (
     <div className='  h-[600px] overflow-y-auto  flex flex-col  my-10'>
-    <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mx-auto gap-4 md:gap-[123px]  '>
+    <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  mx-auto gap-4 md:gap-8  '>
       {TreatmentDatas.map((treatment, index) => (
         <TreatmentCards
           key={index}

@@ -9,12 +9,12 @@ const GetReservation = () => {
         src="https://ik.imagekit.io/m1akscp5q/A7202798.jpeg?updatedAt=1706511949190"
         width={600}
         height={400}
-        className="md:w-1/2"
+        className="md:w-5/6 lg:w-1/2"
         alt="get reservation"
       ></Image>
 
-      <div className="md:w-1/2 flex items-center justify-center align-middle mt-10 md:mt-4  flex-col md:space-y-20">
-        <h1 className=" font-bold text-2xl mx-auto">GET RESERVATION NOW!</h1>
+      <div className="md:w-3/4 lg:w-1/2 flex items-center justify-center align-middle mt-10 md:mt-4  flex-col md:space-y-20">
+        <h1 className=" font-bold mt-4 lg:mt-0 text-2xl mx-auto">GET RESERVATION NOW!</h1>
         <p className=" md:text-2xl text-justify mx-10">
           At Bali Aesthetic Centre, we believe that beauty is a journey, not
           just a destination.<br></br>

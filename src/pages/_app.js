@@ -7,7 +7,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics"; // Pastikan path ini
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      {/* GoogleAnalytics komponen dengan GA Tracking ID yang benar */}
+   
       <GoogleAnalytics ga_id="G-94L5HHJXSH" />
 
       {/* Komponen navigasi */}
