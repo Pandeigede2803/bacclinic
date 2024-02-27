@@ -1,60 +1,51 @@
-// pages/api/send-email.js
+
 import { Resend } from "resend";
 import ReactDOMServer from "react-dom/server";
-import MyEmailComponent from "../../components/MyEmailComponent"; // Sesuaikan path sesuai struktur proyekmu
+import MyEmailComponent from "../../components/MyEmailComponent"; // Adjust the path as per your project structure
 
 export default async function sendEmail(req, res) {
   if (req.method === "POST") {
-    // Logika untuk mengirim email menggunakan Resend atau layanan serupa
-
-    // Menambahkan console log untuk memantau aliran proses
-    console.log("Menerima permintaan pengiriman email");
-
-    // Inisialisasi Resend dengan API key
+    // Logic to send email using Resend or a similar service
+    // Your existing POST request handling code here...
+    console.log("Receiving email send request");
     const resend = new Resend(process.env.RESEND_API_KEY);
-
-    // Extract 'name' from request body alongside 'to', 'subject', and 'message'
     const { to, subject, message, name } = req.body;
-
-    // Menampilkan data email yang akan dikirim di console log
-    console.log("Email Data:");
-    console.log("To:", to);
-    console.log("Subject:", subject);
-    console.log("Message:", message);
-
-
+    console.log("Email Data:", to, subject, message);
 
     const emailHtml = ReactDOMServer.renderToString(
       <MyEmailComponent name={name} message={message} email={to} />
     );
-    
-    // Menampilkan HTML email yang akan dikirim di console log
-    console.log("Email HTML:");
-    console.log(emailHtml);
+
+    console.log("Email HTML:", emailHtml);
 
     try {
-      // Gunakan Resend untuk mengirim email
       await resend.emails.send({
-        from: `noreply@${process.env.EMAIL_FROM}`, // Dynamically add "noreply@" prefix
-        to: "bacclinicbali@gmail.com",// Dynamically add "
+        from: `noreply@${process.env.EMAIL_FROM}`,
+        to: to, // Changed to use the `to` variable from request body
         subject: subject,
-        html: emailHtml, // Use `html` for HTML content or `message` for plain text
+        html: emailHtml,
       });
 
-      // Menampilkan pesan sukses di console log
-      console.log("Email berhasil dikirim");
-
-      res
-        .status(200)
-        .json({ success: true, message: "Email berhasil dikirim!" });
+      console.log("Email sent successfully");
+      res.status(200).json({ success: true, message: "Email sent successfully!" });
     } catch (error) {
       console.error("Error sending email:", error);
-      res
-        .status(500)
-        .json({ success: false, message: "Gagal mengirim email." });
+      res.status(500).json({ success: false, message: "Failed to send email." });
     }
   } else {
+    // Handle non-POST requests here
     res.setHeader("Allow", ["POST"]);
-    res.status(405).end(`Method ${req.method} Not Allowed`);
+    res.status(405).send(`
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <title>Send Email API</title>
+        </head>
+        <body>
+          <h1>Send Email API Endpoint</h1>
+          <p>This API endpoint is for sending emails and only accepts POST requests.</p>
+        </body>
+      </html>
+    `);
   }
 }
