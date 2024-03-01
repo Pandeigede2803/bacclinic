@@ -1,21 +1,15 @@
-import React, { useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import AccordionSurg from "./AccordionSurg";
 import SurgeryData from "./Json/SurgeryData";
 import PlasticData from "./Json/PlasticData";
 
-const AccordionSurgery = () => {
-  const [openAccordion, setOpenAccordion] = useState(0);
-
+const AccordionSurgery = ({ openAccordion, setOpenAccordion }) => {
   const toggleAccordion = (index) => {
     setOpenAccordion(openAccordion === index ? null : index);
   };
 
   return (
-    <div
-      id="accordion-collapse"
-      data-accordion="collapse"
-      className=" font-primary"
-    >
+    <div id="accordion-collapse" data-accordion="collapse" className="font-primary">
       {PlasticData.map((category, catIndex) => (
         <AccordionItem
           key={catIndex}
@@ -30,11 +24,7 @@ const AccordionSurgery = () => {
               key={procIndex}
               id={`procedure-${catIndex}-${procIndex}`}
               title={procedure.name}
-              description={
-                procedure.description
-                  ? procedure.description
-                  : "No description available."
-              }
+              description={procedure.description ? procedure.description : "No description available."}
               src={procedure.src ? procedure.src : "default_image_path.jpg"}
               alt={procedure.alt ? procedure.alt : "Default Image"}
             />
@@ -45,14 +35,18 @@ const AccordionSurgery = () => {
   );
 };
 
-const AccordionItem = ({
-  id,
-  index,
-  title,
-  isOpen,
-  toggleAccordion,
-  children,
-}) => {
+const AccordionItem = ({ id, index, title, isOpen, toggleAccordion, children }) => {
+  const contentRef = useRef(null);
+  const [maxHeight, setMaxHeight] = useState("0px");
+
+  useEffect(() => {
+    if (isOpen) {
+      setMaxHeight(`${contentRef.current.scrollHeight}px`);
+    } else {
+      setMaxHeight("0px");
+    }
+  }, [isOpen, contentRef.current?.scrollHeight]);
+
   return (
     <div id={id}>
       <h2>
@@ -63,9 +57,9 @@ const AccordionItem = ({
           aria-expanded={isOpen ? "true" : "false"}
           aria-controls={`accordion-collapse-body-${index}`}
         >
-          <span className=" md:mx-[20px]">{title}</span>
+          <span className="md:mx-[20px]">{title}</span>
           <svg
-            className={`w-3 h-3 md:mx-[20px] rotate-${isOpen ? "0" : "180"} shrink-0`}
+            className={`w-3 h-3 md:mx-[20px] ${isOpen ? "rotate-180" : "rotate-0"} shrink-0`}
             aria-hidden="true"
             viewBox="0 0 10 6"
             xmlns="http://www.w3.org/2000/svg"
@@ -80,8 +74,10 @@ const AccordionItem = ({
         </button>
       </h2>
       <div
+        ref={contentRef}
         id={`accordion-collapse-body-${index}`}
-        className={isOpen ? "" : "hidden"}
+        className="accordion-content"
+        style={{ maxHeight: maxHeight }}
         aria-labelledby={id}
       >
         {children}

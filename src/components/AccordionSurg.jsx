@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const AccordionSurg = ({ id, title, description, src, alt }) => {
   return (
@@ -15,9 +16,11 @@ const AccordionSurg = ({ id, title, description, src, alt }) => {
         </div>
 
         <div>
-          <button class="bg-red-500 px-[17px] py-[9px] md:my-0 my-6 text-sm rounded-lg text-white transition-transform duration-300 ease-in-out hover:scale-105">
+          <Link href="/contact">
+          <button  class=" bg-secondary px-[17px] py-[9px] md:my-0 my-6 text-sm rounded-lg text-white transition-transform duration-300 ease-in-out hover:scale-105">
             Get Consultation
           </button>
+          </Link>
         </div>
       </div>
 

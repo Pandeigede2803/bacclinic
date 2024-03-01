@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image"; // Pastikan menggunakan 'next/image' bukan 'next/link'
 import ButtonPlastic from "@/components/ButtonPlastic";
 import PlasticData from "@/components/Json/PlasticData";
@@ -7,21 +6,29 @@ import SurgeryData from "@/components/Json/SurgeryData";
 import AccordionSurgery from "@/components/AccordionSurgery";
 import Link from "next/link";
 import { IoMdArrowRoundBack } from "react-icons/io";
-import Head from 'next/head';
-
+import Head from "next/head";
+import React, { useState } from "react";
 
 const PlasticSurgery = () => {
+  const [openAccordion, setOpenAccordion] = useState(null);
 
-  const metaKeywords = PlasticData.map(category => {
-    return category.procedures.map(procedure => {
+  const metaKeywords = PlasticData.map((category) => {
+    return category.procedures.map((procedure) => {
       return procedure.name;
     });
-  }).flat().join(", ");
+  })
+    .flat()
+    .join(", ");
+
+  const handleOpenAccordion = (index) => {
+    // setOpenAccordion from AccordionSurgery's state
+    setOpenAccordion(index);
+  };
 
   return (
     <>
       <Head>
-        <title>Beauty Clinic Denpasar Bali - BAC Clinic | Services</title>
+        <title>Beauty Clinic Denpasar Bali - BAC Clinic | PLastic Surgery</title>
         <meta
           name="description"
           content="BAC Clinic adalah pilihan terbaik untuk perawatan estetika di Denpasar, Bali. Dengan teknologi terkini, kami menawarkan layanan Botox, filler, terapi kulit, dan banyak lagi untuk membantu Anda tampil percaya diri."
@@ -39,7 +46,7 @@ const PlasticSurgery = () => {
           content="BAC Clinic adalah pilihan terbaik untuk perawatan estetika di Denpasar, Bali. Dengan teknologi terkini, kami menawarkan layanan Botox, filler, terapi kulit, dan banyak lagi untuk membantu Anda tampil percaya diri."
         />
         <meta property="og:url" content="https://bacclinic.id" />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="website" ></meta>
         <meta
           property="og:image"
           content="https://ik.imagekit.io/m1akscp5q/background%20image.png?updatedAt=1707296969772"
@@ -61,8 +68,42 @@ const PlasticSurgery = () => {
           </Link>
         </div>
 
-        {/* Search */}
-        <div className="flex  mt-20    flex-row  justify-start">
+        <div>
+        <header className=" font-primary flex flex-col mx-auto text-center justify-center my-10 space-y-10">
+        <h1 className=" text-3xl">Plastic Surgery Catalog</h1>
+        <p className=" text-xl">Embark on a journey of transformation with our comprehensive guide to cosmetic enhancement. Discover the possibilities and empower your beauty with Bali Aesthetic Centre. Explore with confidence, knowing that each procedure is a blend of artistry and precision, tailored to your unique desires and needs.</p>
+      </header>
+          <div className="mb-32 flex flex-row overflow-x-auto lg:w-full w-full ">
+            {PlasticData.map((data, index) => (
+              <div key={index}>
+                <ButtonPlastic
+                  text={data.category}
+                  scrollToId={`accordion-collapse-heading-${index}`}
+                  onButtonClick={() => handleOpenAccordion(index)}
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10">
+            <AccordionSurgery
+              openAccordion={openAccordion}
+              setOpenAccordion={setOpenAccordion}
+            />
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default PlasticSurgery;
+
+{
+  /* Search */
+}
+{
+  /* <div className="flex  mt-20    flex-row  justify-start">
           <form className=" flex flex-row   font-primary">
             <input
               className="p-2 m-2 md:w-[800px] w-full border  border-black rounded-2xl" // padding 10px, margin 10px, width 80%
@@ -77,23 +118,5 @@ const PlasticSurgery = () => {
               Search
             </button>
           </form>
-        </div>
-        <div>
-          <div className=" mb-32 flex flex-row overflow-x-auto lg:w-[980px] w-full ">
-            {PlasticData.map((data, index) => (
-              <div key={index} className="">
-                <ButtonPlastic text={data.category} />
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-10">
-            <AccordionSurgery />
-          </div>
-        </div>
-      </div>
-    </>
-  );
-};
-
-export default PlasticSurgery;
+        </div> */
+}

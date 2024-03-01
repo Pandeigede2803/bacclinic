@@ -449,6 +449,43 @@ const TreatmentDetails = [
       },
     ],
   },
+  {
+    id: 14,
+    slug: "chemical-peeling",
+    pageTitle: "HEALTHY LIPS TREATMENT",
+    imageSrc:
+      "https://ik.imagekit.io/m1akscp5q/Healthy%20treatment%20Lips.png?updatedAt=1708584981364",
+    videoUrl: "https://www.youtube.com/embed/healthy-lips-treatment-video",
+    benefitsList: [
+      "Restores the natural color of lips, making them appear more vibrant and healthy.",
+      "Moisturizes and nourishes the lips, preventing dryness and cracking.",
+      "Enhances the smoothness and softness of the lips for a more youthful appearance.",
+      "Reduces the appearance of fine lines and wrinkles around the lips.",
+      "Provides a protective barrier against environmental damage and dehydration.",
+    ],
+    treatments: [
+      {
+        title: "Special Peeling",
+        description:
+          "Gently exfoliates the lips to remove dead skin cells, revealing smoother and softer lips beneath.",
+      },
+      {
+        title: "Moisturizing Mask",
+        description:
+          "A deeply hydrating mask that infuses the lips with moisture, leaving them soft and supple.",
+      },
+      {
+        title: "Nourishing Serums",
+        description:
+          "Serums rich in vitamins and antioxidants are applied to nourish and protect the lips from environmental stressors.",
+      },
+      {
+        title: "Protective Treatments",
+        description:
+          "Treatments that form a barrier on the lips to lock in moisture and protect against harmful UV rays and pollution.",
+      },
+    ],
+  },
 ];
 
 export default TreatmentDetails;
