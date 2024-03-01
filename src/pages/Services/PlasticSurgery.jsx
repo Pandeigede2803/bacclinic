@@ -97,7 +97,7 @@ const PlasticSurgery = () => {
   );
 };
 
-export default PlasticSurgery;
+export default PlasticSurgery;;
 
 {
   /* Search */
