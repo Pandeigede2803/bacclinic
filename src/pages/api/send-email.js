@@ -31,7 +31,7 @@ export default async function sendEmail(req, res) {
     try {
       await resend.emails.send({
         from: `noreply@${process.env.EMAIL_FROM}`,
-        to: to, // Changed to use the `to` variable from request body
+        to: "bacclinicbali@gmail.com", // Changed to use the `to` variable from request body
         subject: subject,
         html: emailHtml,
       });
