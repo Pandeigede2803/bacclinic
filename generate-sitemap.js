@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const TreatmentDatas = require('../bacproject/src/components/Json/TreatmentSlug'); // Adjust the path as necessary
+const TreatmentSlug = require('../bacproject/src/components/Json/TreatmentSlug'); // Adjust the path as necessary
 
 // Use dynamic import for globby
 const globbyImport = import('globby');
@@ -31,7 +31,7 @@ const globbyImport = import('globby');
     .join('');
 
   // Generate dynamic pages sitemap entries from TreatmentDatas
-  const dynamicPagesSitemap = TreatmentDatas
+  const dynamicPagesSitemap = TreatmentSlug
     .map((treatment) => {
       return `
         <url>
