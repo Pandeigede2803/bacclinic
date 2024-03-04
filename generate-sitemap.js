@@ -1,9 +1,13 @@
 const fs = require('fs');
-const globby = require('globby'); // Ensure globby is installed
-const TreatmentDatas = require('../bacproject/src/components/Json/TreatmentSlug'); // Adjust the path as necessary
+const path = require('path');
+const TreatmentDatas = require('./path/to/TreatmentSlug'); // Adjust the path as necessary
+
+// Use dynamic import for globby
+const globbyImport = import('globby');
 
 (async () => {
-  const pages = await globby([
+  const globby = await globbyImport;
+  const pages = await globby.globby([
     'src/pages/**/*{.js,.jsx}', // Adjust according to your src/pages structure
     '!src/pages/_*.js', // Exclude Next.js specific files
     '!src/pages/api', // Exclude API routes
@@ -13,12 +17,11 @@ const TreatmentDatas = require('../bacproject/src/components/Json/TreatmentSlug'
   // Generate static pages sitemap entries
   const staticPagesSitemap = pages
     .map((page) => {
-      const path = page
+      const route = page
         .replace('src/pages', '')
         .replace('.js', '')
         .replace('.jsx', '')
         .replace('/index', ''); // Corrected to handle the root path correctly
-      const route = path === '' ? '' : path;
       return `
         <url>
           <loc>${`${process.env.SITE_URL}${route}`}</loc>
