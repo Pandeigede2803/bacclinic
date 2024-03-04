@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "node generate-sitemap.js && next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -16,6 +16,7 @@
     "@react-email/components": "^0.0.14",
     "@react-email/html": "^0.0.7",
     "framer-motion": "^11.0.3",
+    "globby": "^14.0.1",
     "next": "14.0.4",
     "nextjs-cors": "^2.2.0",
     "nodemailer": "^6.9.10",
