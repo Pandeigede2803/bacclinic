@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const TreatmentSlug = require('../bacproject/src/components/Json/TreatmentSlug'); // Adjust the path as necessary
+const TreatmentSlug = require('./src/components/Json/TreatmentSlug'); // Adjust the path as necessary
 
 // Use dynamic import for globby
 const globbyImport = import('globby');
