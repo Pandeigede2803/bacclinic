@@ -23,7 +23,7 @@ const CardDataArticle = [
       "Top 5 Aesthetic Treatments in 2024: Benefits and What You Need to Know",
     description:
       "The aesthetic treatment landscape is constantly evolving, with innovative technologies and techniques emerging each year. In 2024, we've seen a surge in demand..",
-    link: "#",
+    slug: "top-5-aesthetic-treatments-benefits-2024",
   },
 
   {
