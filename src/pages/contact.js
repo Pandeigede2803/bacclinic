@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div>
       <Head>
-        <title>Beauty Clinic Denpasar Bali - BAC Clinic | Contact us</title>
+        <title>Bali Aesthetic Centre - BAC Clinic | Perawatan Estetika Terdepan | Contact us</title>
         <meta
           name="description"
           content="BAC Clinic adalah pilihan terbaik untuk perawatan estetika di Denpasar, Bali. Dengan teknologi terkini, kami menawarkan layanan Botox, filler, terapi kulit, dan banyak lagi untuk membantu Anda tampil percaya diri."

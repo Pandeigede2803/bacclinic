@@ -20,10 +20,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Beauty Clinic Denpasar Bali - BAC Clinic | Perawatan Estetika Terdepan</title>
+        <title>Bali Aesthetic Centre - BAC Clinic | Perawatan Estetika Terdepan</title>
         <meta name="description" content="BAC Clinic adalah pilihan terbaik untuk perawatan estetika di Denpasar, Bali. Dengan teknologi terkini, kami menawarkan layanan Botox, filler, terapi kulit, dan banyak lagi untuk membantu Anda tampil percaya diri." />
-        <meta property="og:title" content="Beauty Clinic Denpasar Bali - BAC Clinic | Perawatan Estetika Terdepan" />
-        <meta name="keywords" content="Beauty Clinic Denpasar,Klinik kecantikan terdekat, Klinik kecantikan denpasar, Klinik kecantikan Bali, Nearest Beauty Clinic, BAC Clinic Bali, Perawatan Estetika,Aesthetic Treatments, Skin Treatments, Dermatology, Aesthetic Clinic,  Botox, Filler, Terapi Kulit, Klinik Kecantikan di Bali, Facial termurah diBali, Facial terdekat " />
+        <meta property="og:title" content="Bali Aesthetic Centre - BAC Clinic | Perawatan Estetika Terdepan" />
+        <meta name="keywords" content="Beauty Clinic Denpasar,Bali Aesthetic Centre,Bali Aesthetic Centre, Klinik kecantikan terdekat, Klinik kecantikan denpasar, Klinik kecantikan Bali, Nearest Beauty Clinic, BAC Clinic Bali, Perawatan Estetika,Aesthetic Treatments, Skin Treatments, Dermatology, Aesthetic Clinic,  Botox, Filler, Terapi Kulit, Klinik Kecantikan di Bali, Facial termurah diBali, Facial terdekat " />
         <meta property="og:description" content="BAC Clinic adalah pilihan terbaik untuk perawatan estetika di Denpasar, Bali. Dengan teknologi terkini, kami menawarkan layanan Botox, filler, terapi kulit, dan banyak lagi untuk membantu Anda tampil percaya diri." />
         <meta property="og:url" content="https://bacclinic.id" />
         <meta property="og:type" content="website" />

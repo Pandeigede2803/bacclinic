@@ -3,14 +3,14 @@ import React from "react";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import Link from "next/link";
-import Head from 'next/head';
+import Head from "next/head";
 
 const Services = () => {
   return (
     <div className=" font-primary">
-       <Head>
+      <Head>
         <title>
-          Beauty Clinic Denpasar Bali - BAC Clinic | Services
+          Bali Aesthetic Centre - BAC Clinic | Perawatan Estetika Terdepan
         </title>
         <meta
           name="description"
@@ -50,7 +50,6 @@ const Services = () => {
         <h1>SERVICES</h1>
       </div>
 
-     
       <TreatmentGrid />
       <FloatingWhatsApp
         phoneNumber="6287777939598"

@@ -5,14 +5,14 @@ import Image from "next/image";
 import VisionMissionSection from "@/components/VisionAndMission";
 import VideoAbout from "@/components/VideoAbout";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
-import Head from 'next/head';
+import Head from "next/head";
 
 const about = () => {
   return (
     <div>
       <Head>
         <title>
-          Beauty Clinic Denpasar Bali - BAC Clinic | About
+          Bali Aesthetic Centre - BAC Clinic | Perawatan Estetika Terdepan  | About
         </title>
         <meta
           name="description"
@@ -39,7 +39,6 @@ const about = () => {
         <link rel="canonical" href="https://bacclinic.id" />
       </Head>
 
-      
       <div className="bg-[url('https://ik.imagekit.io/m1akscp5q/wallpaper%20about.png?updatedAt=1706763245494')]   bg-cover bg-center w-full h-[256px] font-primary text-[40px] my-0 text-center text-white justify-center   inline-flex">
         <h1 className=" text-center my-auto">ABOUT US</h1>
       </div>
