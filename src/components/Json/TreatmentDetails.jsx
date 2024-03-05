@@ -452,7 +452,7 @@ const TreatmentDetails = [
   {
     id: 14,
     slug: "chemical-peeling",
-    pageTitle: "HEALTHY LIPS TREATMENT",
+    pageTitle: "CHEMICAL PEELING",
     imageSrc:
       "https://ik.imagekit.io/m1akscp5q/Healthy%20treatment%20Lips.png?updatedAt=1708584981364",
     videoUrl: "https://www.youtube.com/embed/healthy-lips-treatment-video",

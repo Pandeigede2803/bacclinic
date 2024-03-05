@@ -10,7 +10,7 @@ import Head from "next/head";
 import React, { useState } from "react";
 
 const PlasticSurgery = () => {
-  const [openAccordion, setOpenAccordion] = useState(null);
+  const [openAccordion, setOpenAccordion] = useState(0);
 
   const metaKeywords = PlasticData.map((category) => {
     return category.procedures.map((procedure) => {
