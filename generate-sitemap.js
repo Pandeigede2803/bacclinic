@@ -3,7 +3,7 @@ const path = require('path');
 
 // Import the slugs for treatments and articles. Replace with the actual paths to your data.
 const TreatmentSlug = require('./src/components/Json/TreatmentSlug');
-const ArticleSlug = require('./src/components/Json/ArticleJson');;
+const ArticleJson = require('./src/components/Json/ArticleJson');;
 
 // Use dynamic import for globby due to its ES module format
 const globbyImport = import('globby');
@@ -48,7 +48,7 @@ const globbyImport = import('globby');
     }).join('');
 
   // Generate sitemap entries for dynamic article pages
-  const dynamicArticleSitemap = ArticleSlug
+  const dynamicArticleSitemap = ArticleJson
     .filter(a => a.slug) // Ensure there is a slug property
     .map((article) => {
       const slug = article.slug.replace(/x$/, ''); // Remove trailing 'x' from slug
