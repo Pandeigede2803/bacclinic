@@ -28,7 +28,9 @@ const PlasticSurgery = () => {
   return (
     <>
       <Head>
-        <title>Beauty Clinic Denpasar Bali - BAC Clinic | PLastic Surgery</title>
+        <title>
+          Beauty Clinic Denpasar Bali - BAC Clinic | PLastic Surgery
+        </title>
         <meta
           name="description"
           content="BAC Clinic adalah pilihan terbaik untuk perawatan estetika di Denpasar, Bali. Dengan teknologi terkini, kami menawarkan layanan Botox, filler, terapi kulit, dan banyak lagi untuk membantu Anda tampil percaya diri."
@@ -46,7 +48,7 @@ const PlasticSurgery = () => {
           content="BAC Clinic adalah pilihan terbaik untuk perawatan estetika di Denpasar, Bali. Dengan teknologi terkini, kami menawarkan layanan Botox, filler, terapi kulit, dan banyak lagi untuk membantu Anda tampil percaya diri."
         />
         <meta property="og:url" content="https://bacclinic.id" />
-        <meta property="og:type" content="website" ></meta>
+        <meta property="og:type" content="website"></meta>
         <meta
           property="og:image"
           content="https://ik.imagekit.io/m1akscp5q/background%20image.png?updatedAt=1707296969772"
@@ -69,10 +71,28 @@ const PlasticSurgery = () => {
         </div>
 
         <div>
-        <header className=" font-primary flex flex-col mx-auto text-center justify-center my-10 space-y-10">
-        <h1 className=" text-3xl">Plastic Surgery Catalog</h1>
-        <p className=" text-xl">Embark on a journey of transformation with our comprehensive guide to cosmetic enhancement. Discover the possibilities and empower your beauty with Bali Aesthetic Centre. Explore with confidence, knowing that each procedure is a blend of artistry and precision, tailored to your unique desires and needs.</p>
-      </header>
+          <header className=" font-primary flex flex-col mx-auto text-center justify-center my-10 space-y-10">
+            <h1 className=" text-3xl">Plastic Surgery Catalog</h1>
+            <p className=" text-xl">
+              Embark on a journey of transformation with our comprehensive guide
+              to cosmetic enhancement. Discover the possibilities and empower
+              your beauty with Bali Aesthetic Centre. Explore with confidence,
+              knowing that each procedure is a blend of artistry and precision,
+              tailored to your unique desires and needs.
+            </p>
+
+            <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+              {/* Download Button */}
+              <Link href="https://ik.imagekit.io/m1akscp5q/price%20list.pdf?updatedAt=1710389928600" passHref>
+                <div
+                  download
+                  className=" bg-white  hover:bg-secondary hover:text-white text-black border border-black  font-bold py-2 px-4 hover:scale-105 transform transition duration-150 ease-in-out"
+                >
+                 DOWNLOAD PRICE LIST
+                </div>
+              </Link>
+            </main>
+          </header>
           <div className="mb-32 flex flex-row overflow-x-auto lg:w-full w-full ">
             {PlasticData.map((data, index) => (
               <div key={index}>
@@ -97,7 +117,7 @@ const PlasticSurgery = () => {
   );
 };
 
-export default PlasticSurgery;;
+export default PlasticSurgery;
 
 {
   /* Search */
