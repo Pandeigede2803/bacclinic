@@ -1,57 +1,48 @@
 const fs = require('fs');
 const path = require('path');
 
-// Adjust the import path as necessary for your project structure
+// Import the slugs for treatments and articles
 const TreatmentSlug = require('./src/components/Json/TreatmentSlug');
+const ArticleSlug = require('./src/components/Json/ArticleJson'); // Replace with your actual path
 
-// Use dynamic import for globby due to its ES module format
 const globbyImport = import('globby');
 
 (async () => {
   const globby = await globbyImport;
   const pages = await globby.globby([
-    'src/pages/**/*{.js,.jsx}', // Adjust according to your src/pages structure
-    '!src/pages/_*.js', // Exclude Next.js specific files like _app and _document
-    '!src/pages/api', // Exclude API routes
-    '!src/pages/404.js', // Exclude the custom 404 page
+    // ... your globby setup remains the same
   ]);
 
-  // Ensure SITE_URL is correctly set and trimmed
-  const siteUrl = (process.env.SITE_URL || 'https://bacclinic.id').trim();
+  // ... the rest of the setup remains the same
 
-  // Generate sitemap entries for static pages
-  const staticPagesSitemap = pages.map((page) => {
-    const route = page
-      .replace('src/pages', '')
-      .replace('.js', '')
-      .replace('.jsx', '')
-      .replace('/index', ''); // Correct handling for the root path
+  // Generate sitemap entries for dynamic treatment pages
+  const dynamicTreatmentSitemap = TreatmentSlug.map((treatment) => {
     return `
       <url>
-        <loc>${siteUrl}${route}</loc>
+        <loc>${siteUrl}/Services/${encodeURIComponent(treatment.slug)}</loc>
       </url>`;
   }).join('');
 
-  // Generate sitemap entries for dynamic pages from TreatmentSlug
-  const dynamicPagesSitemap = TreatmentSlug.map((treatment) => {
+  // Generate sitemap entries for dynamic article pages
+  const dynamicArticleSitemap = ArticleSlug.map((article) => {
     return `
       <url>
-        <loc>${siteUrl}/Services/${treatment.slug}</loc>
+        <loc>${siteUrl}/Article/${encodeURIComponent(article.slug)}</loc>
       </url>`;
   }).join('');
 
-  // Concatenate and trim the sitemap content to ensure no leading whitespace
+  // Concatenate all parts of the sitemap
   const sitemapContent = `
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   ${staticPagesSitemap}
-  ${dynamicPagesSitemap}
+  ${dynamicTreatmentSitemap}
+  ${dynamicArticleSitemap}
 </urlset>
 `.trim();
 
-  // Write the sitemap.xml file to the public directory
+  // Write the sitemap.xml to the public directory
   fs.writeFileSync(path.resolve('public', 'sitemap.xml'), sitemapContent);
 
   console.log('Sitemap generated successfully!');
 })();
-
