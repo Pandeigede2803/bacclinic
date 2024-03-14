@@ -3,7 +3,7 @@ const path = require('path');
 
 // Import the slugs for treatments and articles. Replace with the actual paths to your data.
 const TreatmentSlug = require('./src/components/Json/TreatmentSlug');
-const ArticleSlug = require('./src/components/Json/ArticleSlug');
+const ArticleSlug = require('./src/components/Json/ArticleJson');
 
 // Use dynamic import for globby due to its ES module format
 const globbyImport = import('globby');
