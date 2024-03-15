@@ -1,4 +1,4 @@
-const ArticleJson = [
+module.exports  = [
   {
     key: "1",
     metadata: {
@@ -289,4 +289,4 @@ const ArticleJson = [
   },
 ];
 
-export default ArticleJson;
+
