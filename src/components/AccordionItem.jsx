@@ -24,8 +24,8 @@ const Accordion = () => {
       <AccordionItem title="Treatment">
         <ul className="list-disc list-inside ">
           <li>
-            <Link href="/facials" className=" hover:text-secondary">
-              Facials
+            <Link href="Services/basic-skin-treatment" className=" hover:text-secondary">
+            Basic Skin Treatmens
             </Link>
           </li>
           <li>
@@ -34,28 +34,28 @@ const Accordion = () => {
             </Link>
           </li>
           <li>
-            <Link href="/laser-treatment" className=" hover:text-secondary">
-              Laser treatment
+            <Link href="/Services/skin-resurfacing-by-fsr" className=" hover:text-secondary">
+              Skin resurfacing by FSR
             </Link>
           </li>
         </ul>
       </AccordionItem>
 
-      <AccordionItem title="Skin Care">
+      <AccordionItem title="Plastic Surgery">
         <ul className="list-disc list-inside">
           <li>
-            <Link href="/moisturizers" className=" hover:text-secondary">
-              Moisturizers
+            <Link href="/Services/PlasticSurgery" className=" hover:text-secondary">
+              Blepharoplasty
             </Link>
           </li>
           <li>
-            <Link href="/cleansers" className=" hover:text-secondary">
-              Cleansers
+            <Link href="/Services/PlasticSurgery" className=" hover:text-secondary">
+              Breast
             </Link>
           </li>
           <li>
-            <Link href="/sunscreens" className=" hover:text-secondary">
-              Sunscreens
+            <Link href="/Services/PlasticSurgery" className=" hover:text-secondary">
+              Chin
             </Link>
           </li>
         </ul>
@@ -64,18 +64,18 @@ const Accordion = () => {
       <AccordionItem title="Promo">
         <ul className="list-disc list-inside">
           <li>
-            <Link href="/skin-care-product" className=" hover:text-secondary">
+            <Link href="/Promo" className=" hover:text-secondary">
               Skin Care Product
             </Link>
           </li>
           <li>
-            <Link href="/treatment" className=" hover:text-secondary">
-              Treatment
+            <Link href="/Promo" className=" hover:text-secondary">
+              Skin Treatment
             </Link>
           </li>
           <li>
-            <Link href="/consultation" className=" hover:text-secondary">
-              Consultation
+            <Link href="/Promo" className=" hover:text-secondary">
+              Wajah Tirus
             </Link>
           </li>
         </ul>
