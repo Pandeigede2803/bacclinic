@@ -29,7 +29,7 @@ const PlasticSurgery = () => {
     <>
       <Head>
         <title>
-          Beauty Clinic Denpasar Bali - BAC Clinic | PLastic Surgery
+          Beauty Clinic Denpasar Bali - BAC Clinic | Beauty Clinic Bali and Plastic Surgery
         </title>
         <meta
           name="description"

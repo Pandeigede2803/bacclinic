@@ -12,7 +12,7 @@ const about = () => {
     <div>
       <Head>
         <title>
-          Bali Aesthetic Centre - BAC Clinic | Perawatan Estetika Terdepan  | About
+          Bali Aesthetic Centre - BAC Clinic | Beauty Clinic Bali and Plastic Surgery | About
         </title>
         <meta
           name="description"

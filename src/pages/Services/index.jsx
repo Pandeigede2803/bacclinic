@@ -10,7 +10,7 @@ const Services = () => {
     <div className=" font-primary">
       <Head>
         <title>
-          Bali Aesthetic Centre - BAC Clinic | Perawatan Estetika Terdepan
+          Bali Aesthetic Centre - BAC Clinic | Beauty Clinic Bali and Plastic Surgery
         </title>
         <meta
           name="description"
