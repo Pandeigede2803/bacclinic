@@ -1,13 +1,24 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useState } from "react";
 import AccordionSurg from "./AccordionSurg";
-import SurgeryData from "./Json/SurgeryData";
 import PlasticData from "./Json/PlasticData";
 
-const AccordionSurgery = ({ openAccordion, setOpenAccordion }) => {
+// Komponen AccordionSurgery utama
+const AccordionSurgery = () => {
+  // Menginisialisasi state dengan array kosong untuk menampung indeks-indeks aksordion yang terbuka
+  const [openAccordion, setOpenAccordion] = useState([]);
+
+  // Fungsi untuk mengubah status terbuka/tutup aksordion
   const toggleAccordion = (index) => {
-    setOpenAccordion(openAccordion === index ? null : index);
+    if (openAccordion.includes(index)) {
+      // Jika index sudah ada di dalam array, menghapusnya (menutup aksordion)
+      setOpenAccordion(openAccordion.filter(i => i !== index));
+    } else {
+      // Jika tidak, menambahkannya ke dalam array (membuka aksordion)
+      setOpenAccordion([...openAccordion, index]);
+    }
   };
 
+  // Render komponen AccordionSurgery
   return (
     <div id="accordion-collapse" data-accordion="collapse" className="font-primary">
       {PlasticData.map((category, catIndex) => (
@@ -16,7 +27,7 @@ const AccordionSurgery = ({ openAccordion, setOpenAccordion }) => {
           id={`accordion-collapse-heading-${catIndex}`}
           index={catIndex}
           title={category.category.toUpperCase()}
-          isOpen={openAccordion === catIndex}
+          isOpen={openAccordion.includes(catIndex)} // Menentukan apakah aksordion ini terbuka
           toggleAccordion={() => toggleAccordion(catIndex)}
         >
           {category.procedures.map((procedure, procIndex) => (
@@ -24,9 +35,9 @@ const AccordionSurgery = ({ openAccordion, setOpenAccordion }) => {
               key={procIndex}
               id={`procedure-${catIndex}-${procIndex}`}
               title={procedure.name}
-              description={procedure.description ? procedure.description : "No description available."}
-              src={procedure.src ? procedure.src : "default_image_path.jpg"}
-              alt={procedure.alt ? procedure.alt : "Default Image"}
+              description={procedure.description || "No description available."}
+              src={procedure.src || "default_image_path.jpg"}
+              alt={procedure.alt || "Default Image"}
             />
           ))}
         </AccordionItem>
@@ -35,31 +46,21 @@ const AccordionSurgery = ({ openAccordion, setOpenAccordion }) => {
   );
 };
 
+// Komponen AccordionItem individual
 const AccordionItem = ({ id, index, title, isOpen, toggleAccordion, children }) => {
-  const contentRef = useRef(null);
-  const [maxHeight, setMaxHeight] = useState("0px");
-
-  useEffect(() => {
-    if (isOpen) {
-      setMaxHeight(`${contentRef.current.scrollHeight}px`);
-    } else {
-      setMaxHeight("0px");
-    }
-  }, [isOpen, contentRef.current?.scrollHeight]);
-
   return (
     <div id={id}>
       <h2>
         <button
           type="button"
           className="flex items-center justify-between w-full p-5 font-medium text-black border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-primary gap-3"
-          onClick={() => toggleAccordion(index)}
+          onClick={toggleAccordion}
           aria-expanded={isOpen ? "true" : "false"}
           aria-controls={`accordion-collapse-body-${index}`}
         >
-          <span className="md:mx-[20px]">{title}</span>
+          {title}
           <svg
-            className={`w-3 h-3 md:mx-[20px] ${isOpen ? "rotate-180" : "rotate-0"} shrink-0`}
+            className={`w-3 h-3 ${isOpen ? "rotate-180" : "rotate-0"} shrink-0`}
             aria-hidden="true"
             viewBox="0 0 10 6"
             xmlns="http://www.w3.org/2000/svg"
@@ -74,10 +75,8 @@ const AccordionItem = ({ id, index, title, isOpen, toggleAccordion, children }) 
         </button>
       </h2>
       <div
-        ref={contentRef}
         id={`accordion-collapse-body-${index}`}
-        className="accordion-content"
-        style={{ maxHeight: maxHeight }}
+        className={`accordion-content ${isOpen ? "block" : "hidden"}`}
         aria-labelledby={id}
       >
         {children}

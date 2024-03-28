@@ -1,16 +1,20 @@
+// Mengimpor React dari library react untuk memungkinkan pembuatan komponen React.
 import React from "react";
 
-const ButtonPlastic = ({ text, scrollToId,onButtonClick }) => {
+const ButtonPlastic = ({ text, scrollToId, onButtonClick }) => {
 
   const handleClick = () => {
-    if(onButtonClick) {
-      onButtonClick(); // This will open the accordion
+    if (onButtonClick) {
+      onButtonClick(); // Ini akan membuka aksordion
     }
 
-    const element = document.getElementById(scrollToId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
+    // Menambahkan setTimeout untuk delay sebelum scrolling
+    setTimeout(() => {
+      const element = document.getElementById(scrollToId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 100); // Delay 100 ms; sesuaikan nilai ini sesuai kebutuhan
   };
 
   return (
