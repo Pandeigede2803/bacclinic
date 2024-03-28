@@ -1,24 +1,20 @@
-import React, { useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import AccordionSurg from "./AccordionSurg";
+// Assuming PlasticData is correctly imported from the specified path.
 import PlasticData from "./Json/PlasticData";
 
-// Komponen AccordionSurgery utama
+// Main AccordionSurgery component to display a list of plastic surgery accordions.
 const AccordionSurgery = () => {
-  // Menginisialisasi state dengan array kosong untuk menampung indeks-indeks aksordion yang terbuka
-  const [openAccordion, setOpenAccordion] = useState([]);
+  // State to keep track of the currently open accordion.
+  const [openAccordion, setOpenAccordion] = useState(null);
 
-  // Fungsi untuk mengubah status terbuka/tutup aksordion
+  // Function to toggle accordion's open/close state based on index.
   const toggleAccordion = (index) => {
-    if (openAccordion.includes(index)) {
-      // Jika index sudah ada di dalam array, menghapusnya (menutup aksordion)
-      setOpenAccordion(openAccordion.filter(i => i !== index));
-    } else {
-      // Jika tidak, menambahkannya ke dalam array (membuka aksordion)
-      setOpenAccordion([...openAccordion, index]);
-    }
+    // Toggles the open state; if the same index is clicked, it will close.
+    setOpenAccordion(openAccordion === index ? null : index);
   };
 
-  // Render komponen AccordionSurgery
+  // Rendering the accordion component by iterating over the plastic surgery data.
   return (
     <div id="accordion-collapse" data-accordion="collapse" className="font-primary">
       {PlasticData.map((category, catIndex) => (
@@ -27,7 +23,7 @@ const AccordionSurgery = () => {
           id={`accordion-collapse-heading-${catIndex}`}
           index={catIndex}
           title={category.category.toUpperCase()}
-          isOpen={openAccordion.includes(catIndex)} // Menentukan apakah aksordion ini terbuka
+          isOpen={openAccordion === catIndex}
           toggleAccordion={() => toggleAccordion(catIndex)}
         >
           {category.procedures.map((procedure, procIndex) => (
@@ -46,15 +42,27 @@ const AccordionSurgery = () => {
   );
 };
 
-// Komponen AccordionItem individual
+// Individual AccordionItem component for displaying each accordion item.
 const AccordionItem = ({ id, index, title, isOpen, toggleAccordion, children }) => {
+  // Using useRef to access the content element of the accordion for dynamic height adjustment.
+  const contentRef = useRef(null);
+  // State to control the maximum height of the accordion content when expanded or collapsed.
+  const [maxHeight, setMaxHeight] = useState("0px");
+
+  // Effect to update content height based on the open/close state.
+  useEffect(() => {
+    // Adjusts maxHeight to enable CSS transition for expanding and collapsing.
+    setMaxHeight(isOpen ? `${contentRef.current.scrollHeight}px` : "0px");
+  }, [isOpen, contentRef.current?.scrollHeight]);
+
+  // Rendering each accordion item.
   return (
     <div id={id}>
       <h2>
         <button
           type="button"
           className="flex items-center justify-between w-full p-5 font-medium text-black border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-primary gap-3"
-          onClick={toggleAccordion}
+          onClick={() => toggleAccordion(index)}
           aria-expanded={isOpen ? "true" : "false"}
           aria-controls={`accordion-collapse-body-${index}`}
         >
@@ -75,8 +83,10 @@ const AccordionItem = ({ id, index, title, isOpen, toggleAccordion, children }) 
         </button>
       </h2>
       <div
+        ref={contentRef}
         id={`accordion-collapse-body-${index}`}
-        className={`accordion-content ${isOpen ? "block" : "hidden"}`}
+        style={{ maxHeight: maxHeight }}
+        className="accordion-content"
         aria-labelledby={id}
       >
         {children}
@@ -85,4 +95,5 @@ const AccordionItem = ({ id, index, title, isOpen, toggleAccordion, children }) 
   );
 };
 
+// Export the AccordionSurgery component for use elsewhere.
 export default AccordionSurgery;
